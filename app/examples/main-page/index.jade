@@ -1,0 +1,195 @@
+extends ../../layouts/index.jade
+
+block head-title
+    | - Card
+
+block styles
+    link(href="../../lib/owl.carousel/dist/assets/owl.carousel.min.css", rel="stylesheet")
+    link(href="style.css", rel="stylesheet")
+
+block scripts
+    script(src='../../lib/owl.carousel/dist/owl.carousel.min.js')
+    script(src='main.js')
+
+block content
+  .container
+    .wrappContent
+      #sliderOne.owl-carousel
+        .photoWrapp
+          .wrappImg
+            img(src="../../images/main-page/section-1.jpg", title="ЗАЙМИТЕСЬ ТЕМ, ЧТО ЛЮБИТЕ.")
+          .decription
+            h1 ЗАЙМИТЕСЬ ТЕМ, ЧТО ЛЮБИТЕ.
+            p Вашу работу доверьте нам, ведь это именно то, что мы любим делать мы.
+            a.btn.defaultBtn(href="#") заказать работу
+        .photoWrapp
+          .wrappImg
+            img(src="../../images/main-page/section-1.jpg", title="ЗАЙМИТЕСЬ ТЕМ, ЧТО ЛЮБИТЕ.")
+          .decription
+            h1 ЗАЙМИТЕСЬ ТЕМ, ЧТО ЛЮБИТЕ2.
+            p Вашу работу доверьте нам, ведь это именно то, что мы любим делать мы.
+            a.btn.defaultBtn(href="#") заказать работу
+
+    .section2.orderUs.wrappContent
+        h2 ВЫ МОЖЕТЕ ЗАКАЗАТЬ У НАС
+        .orderUsContent
+          .orderUsContent-item
+            i.icon.icon-one
+            h4 ДИПЛОМНАЯ РАБОТА
+            .price ОТ 6 900 ₷/ ЧАС
+            .btnOrangeHidden.btn ЗАКАЗАТЬ РАБОТУ
+          .orderUsContent-item
+            i.icon.icon-two
+            h4 КУРСОВАЯ РАБОТА
+            .price ОТ 900 ₷/ ЧАС
+            .btnOrangeHidden.btn ЗАКАЗАТЬ РАБОТУ
+          .orderUsContent-item
+            i.icon.icon-three-h
+            h4 РЕФЕРАТ
+            .price ОТ 490 ₷/ ЧАС
+            .btnOrangeHidden.btn ЗАКАЗАТЬ РАБОТУ
+          .orderUsContent-item
+            i.icon.icon-four
+            h4 ОТВЕТЫ НА БИЛЕТЫ
+            .price ОТ 60 ₷/ ЧАС
+            .btnOrangeHidden.btn ЗАКАЗАТЬ РАБОТУ
+          .orderUsContent-item
+            i.icon.icon-five
+            h4 КОНТРОЛЬНАЯ РАБОТА
+            .price ОТ 150 ₷/ ЧАС
+            .btnOrangeHidden.btn ЗАКАЗАТЬ РАБОТУ
+          .orderUsContent-item
+            i.icon.icon-sex
+            h4 ОТЧЕТ ПО ПРАКТИКЕ
+            .price ОТ 1200 ₷/ ЧАС
+            .btnOrangeHidden.btn ЗАКАЗАТЬ РАБОТУ
+          .orderUsContent-item
+            i.icon.icon-seven
+            h4 РЕРАЙТ
+              span (ПОВЫШЕНИЕ ОРИГИНАЛЬНОСТИ ТЕКСТА)
+            .price ОТ 290 ₷/ ЧАС
+            .btnOrangeHidden.btn ЗАКАЗАТЬ РАБОТУ
+          .orderUsContent-item
+            i.icon.icon-eight
+            h4 РЕШЕНИЕ ЗАДАЧ
+            .price ОТ 60 ₷/ ЧАС
+            .btnOrangeHidden.btn ЗАКАЗАТЬ РАБОТУ
+
+
+        a(href="").blackBtn.btn и любые другие виды работ
+
+    .section3
+      .wrappContent
+        h2 НАШИ ПРЕИМУЩЕСТВА
+
+        .sectionContent
+          a.sectionContent-item.active(href="#")
+            i.icon.icon-le-smart-price
+            h4 РАЗУМНЫЕ ЦЕНЫ
+          a.sectionContent-item(href="#")
+            i.icon.icon-le-garant
+            h4 Гарантии качества
+          a.sectionContent-item(href="#")
+            i.icon.icon-le-human
+            h4 Квалифицированные авторы
+          a.sectionContent-item(href="#")
+            i.icon.icon-le-short-time
+            h4 Короткие сроки
+          .pathLine.menu__line
+            .dot.active
+            .dot
+            .dot
+            .dot
+        .decription
+          .desc.active
+            p У нас цена оптимально сочетается с качеством работ,
+            p поэтому для вас всегда есть особые условия и акции
+          .desc
+            p Мы несем ответственность за качество выполненных работ. Заключаем официальный договор, каждую работу сопровождаем отчетом проверки на антиплагиат.
+          .desc
+            p В штат компании входят действующие специалисты с длительным опытом работы в области образования: преподаватели ВУЗов, кандидаты и доктора наука - эксперты с профессиональным подходом к решению поставленных перед ними задач.
+          .desc
+            p Срок выполнения работы может составлять 1 день благодаря многолетнему опыту работы в данной сфере и отлаженному взаимодействию с авторами.
+
+    .section4
+      .wrappContent
+        h2 Для заказа достаточно
+          br
+          | нажать одну кнопку
+        a.btn.blackBtn(href="") ЗАКАЗАТЬ РАБОТУ
+        .orderBlocks
+          .orderItem
+            i.icon.icon-cap-blue
+            h4 СТУДЕНТАМ
+            p Оригинальные работы высокого качества, выполненные точно в срок
+            a.btn.btnBlue(href="") ГАРАНТИИ
+          .orderItem
+            i.icon.icon-le-men
+            h4 АВТОРАМ
+            p Достойная оплата за ваш труд, своевременные выплаты, гибкий график работы
+            a.btn.btnOrange(href="") ВАКАНСИИ
+          .orderItem
+            i.icon.icon-le-two-men
+            h4 ПАРТНЕРАМ
+            p Привлекательные условия сотрудничества для студентов и организаций
+            a.btn.btnGreen(href="#") УСЛОВИЯ
+
+    .section5
+      .wrappContent.review
+        h3 ОТЗЫВЫ О НАС
+        #reviewCarusel.owl-carousel
+          .useInfo.focusItem
+            .avatar
+              img(src="../../images/main-page/review-carusel/user1.jpg", alt="Екатерина Белик")
+            a.name(href="https://vk.com/id154377208") Екатерина Белик
+            .desc студентка 5 курса СПБГУКИ
+          .useInfo
+            .avatar
+              img(src="../../images/main-page/review-carusel/user2.jpg", alt="Анна Литовская")
+            .name Анна Литовская
+            .desc студентка 5 курса СПБГУКИ
+          .useInfo
+            .avatar
+              img(src="../../images/main-page/review-carusel/user3.jpg", alt="Анна Литовская")
+            .name Анна Литовская
+            .desc студентка 5 курса СПБГУКИ
+          .useInfo
+            .avatar
+              img(src="../../images/main-page/review-carusel/user1.jpg", alt="Анна Литовская")
+            .name Анна Литовская
+            .desc студентка 5 курса СПБГУКИ
+        .description
+          .desc.active Выражаю благодарность Компании ЛЕКУРС за быстрое и самое главное качественное выполнение моей работы. За 4 дня написали мне курсовую работу, которую я защитила на отлично! Цена при этом вполне адекватная.
+          .desc Большое спасибо за качественную дипломную работу. У меня в группе была самая высокая оригинальность работы (84%). Преподаватель очень требовательная, но все ее пожелания и требования были в моей работе!
+          .desc Спасибо за курсовую работу! Без замечаний, конечно, не обошлось, но в компании все оперативно исправили без каких-либо доплат.
+          .desc Очень жаль, что обратилась за помощью в Компанию ЛЕКУРС только на последнем курсе обучения. Заказывала отчет по преддипломной практике вместе с дипломной работой. Невысокая цена, быстрое выполнение. Сразу видно, что работа не скачана с интернета, а тщательно проработана. Большое спасибо, буду рекомендовать Вас своим друзьям и знакомым.
+          .desc Мало кто соглашался взяться за мою курсовую работу по сложной тематике. Не сожалею, что обратился в ЛЕКУРС. Работа была предоставлена с учетом всех требований руководителя курсового проекта в сжатые сроки и по доступной цене. Рекомендую!
+
+    .section6
+      .wrappContent
+        h2 Удобство оплаты
+
+        .payments
+          .payment
+            img(src="../../images/payments/rub.jpg", title="rub")
+          .payment
+            img(src="../../images/payments/visa.jpg", title="visa")
+          .payment
+            img(src="../../images/payments/mastercard.jpg", title="mastercard")
+          .payment
+            img(src="../../images/payments/banks.jpg", title="banks")
+          .payment
+            img(src="../../images/payments/yandexmoney.jpg", title="yandexmoney")
+          .payment
+            img(src="../../images/payments/webmoney.jpg", title="webmoney")
+          .payment
+            img(src="../../images/payments/qiwi.jpg", title="qiwi")
+          .payment
+            img(src="../../images/payments/conect.jpg", title="Связной")
+          .payment
+            img(src="../../images/payments/megafon.jpg", title="Мегафон")
+          .payment
+            img(src="../../images/payments/mts.jpg", title="Mts")
+        .infoPayment  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, optio.
+
+

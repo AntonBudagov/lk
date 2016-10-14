@@ -1,0 +1,17 @@
+=text-overflow
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+=text-overflow-multiline
+  overflow: hidden
+  text-overflow: ellipsis
+  -webkit-box-orient: vertical
+
+=clearfix
+  *zoom: 1
+  &::after
+    content: ''
+    display: table
+    line-height: 0
+    clear: both

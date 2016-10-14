@@ -1,0 +1,93 @@
+extends ../../layouts/index.jade
+
+block head-title
+    | - product
+
+block styles
+    link(href="style.css", rel="stylesheet")
+
+block scripts
+    script(src='main.js')
+
+block content
+  .container.order-work
+    .wrappContent
+      h1 ЗАКАЗАТЬ ДИПЛОМНУЮ РАБОТУ
+      .description
+        p Текст о том каз заказать дипломную работу Текст о том каз заказать дипломную работу Текст о том каз заказать дипломную работу Текст о том каз заказать дипломную работу Текст о том каз заказать дипломную работу Текст о том каз заказать дипломную работу Текст о том каз заказать дипломную работу Текст о том каз заказать дипломную работу Текст о том каз заказать дипломную работу Текст о том каз заказать дипломную работу Текст о том каз заказать дипломную работу Текст о том каз заказать дипломную работу
+      form.form.formOrderWork
+        .title ОФОРМИТЬ ЗАКАЗ
+        .formContent
+          .leftFormContent
+            .groupInput
+              label Тип работы
+                span.required *
+              .select
+                span.default-value ВЫБЕРИТЕ ТИП РАБОТЫ
+                ul
+                  li Дипломная работа
+                  li Lorem Ipsum Ipsum
+                  li Lorem Ipsum Ipsum
+                  li Lorem Ipsum
+                  li Lorem Ipsum Ipsum Ipsum
+                  li Lorem Ipsum
+                  li Lorem Ipsum
+                  li Lorem Ipsum Ipsum
+                  li Lorem
+                  li Lorem Ipsum
+                  li Ipsum
+            .groupInput
+              label
+                | Предмет
+                span.required *
+              input(type="text" placeholder="предмет")
+            .groupInput
+              label
+                | Город
+                span.required *
+              input(type="text" placeholder="Введите город")
+            .groupInput
+              label
+                | Имя
+                span.required *
+              input(type="text" placeholder="Ваше имя")
+          .rightFormContent
+
+            .groupInput
+              .groupInputSubitem
+                lable
+                  | Количество страниц
+                  span.required *
+                input.number(type="text" placeholder="60-80")
+              .groupInputSubitem
+                lable
+                  | Размер шрифта
+                  span.required *
+                .select.number
+                  span.default-value 14px
+                  ul
+                    li 16px
+                    li 18px
+                    li 20px
+            .groupInput
+              lable
+                | Тема
+                span.required *
+              input(type="text" placeholder="Ваше имя")
+            .groupInput
+              lable
+                | email
+                span.required *
+              input(type="text" placeholder="email")
+            .groupInput
+              lable
+                | Телефон
+                span.required *
+              input(type="text" placeholder="+7 ")
+
+        input(type="submit" value="создать заказ").btn.sendBtn
+        +test
+
+
+
+

@@ -1,0 +1,82 @@
+.form
+  border: solid 2px #96c388
+  border-radius: 2px
+  position: relative
+  .title
+    font-size: 21px
+    font-weight: 700
+    letter-spacing: 1.5px
+    margin-bottom: 25px
+    text-align: center
+
+  label
+    font-size: 15px
+    font-weight: 400
+    color: #262422
+
+
+  .required
+    color: #eaaa7f
+
+// Select
+.select
+  position: relative
+  display: block
+  position: relative
+  display: block
+  margin: 0 auto
+  width: 100%
+  color: #cccccc
+  vertical-align: middle
+  text-align: left
+  user-select: none
+  ul
+    display: none
+    position: absolute
+    overflow: hidden
+    width: 100%
+    background: #fff
+    border: solid 1px #d0cdc7
+    top: 100%
+    left: 0
+    list-style: none
+    padding: 0
+    z-index: 100
+    li
+      display: block
+      text-align: left
+      padding: 13px 0 14px 14px
+      color: #999
+      cursor: pointer
+      border-bottom: solid 1px #d0cdc7
+      font-size: 15px
+      &:last-child
+        border: none
+
+      &:hover
+        background: #4ebbf0
+        color: #fff
+  .default-value
+    position: relative
+    display: block
+    background-color: #393d41
+    z-index: 1
+    padding: 14px
+    border-radius: 2px
+    cursor: pointer
+    font-size: 12px
+    &:after
+      position: absolute
+      right: 11px
+      top: 50%
+      transform: translateY(-50%)
+      content: '↑'
+      z-index: 10
+      font-size: 21px
+.is-open
+  ul
+    display: block
+  .default-value
+    &:after
+      content: '↓'
+

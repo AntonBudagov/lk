@@ -1,0 +1,44 @@
+.page-guarantee
+  .wrappContent
+    .content,
+    .rightSibar
+      display: inline-block
+      vertical-align: top
+      padding-top: 30px
+    .content
+      width: 70%
+      width: 651px
+
+      margin-right: 94px
+      p
+        margin-top: 26px
+      h2
+        font-size: 15px
+        margin-top: 36px
+
+    .rightSibar
+      width: 30%
+
+      .form
+        width: 318px
+        height: 283px
+        padding: 75px 27px 0
+
+        .leter
+          position: absolute
+          top: 68px
+          left: 130px
+        .leterWrapp
+          transform: rotate(-145deg)
+          span
+            position: absolute;
+            // width: 20px;
+            height: 102px
+            left: 0;
+            top: 0;
+            // transform-origin: bottom center;
+            font-size: 9px
+          @for $i from 1 through 100
+            span:nth-child(#{$i})
+              transform: rotate(($i*10)+deg)
+

@@ -1,0 +1,114 @@
+//- Mixin
+mixin test
+  h1 test
+
+doctype html
+html(lang="ru")
+  head
+    //- base(href="/")
+
+
+    meta(charset="utf-8")
+    meta(name="viewport" id="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=no")
+    title
+      | Name Project
+      block head-title
+
+
+    link(href="../../css/main.css", rel="stylesheet")
+    //- prodaction
+    //- link(href="css/all.css", rel="stylesheet")
+    block styles
+
+
+
+  body
+    .header
+        .wrappContent
+            .topHeader
+                a.logo(href="") LEKURS
+                .phoneContainer
+                    a.tel(href="tel:88000000000") 8 800 000 00 00
+                    a.tel(href="tel:88000000000") 8 800 000 00 00
+                .feedbackContainer
+                    a.link(href="#") ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК
+                    a.link(href="#") ЗАКАЗАТЬ РАБОТУ
+            ul.menu
+                li
+                    a(href="#") О КОМПАНИИ
+                li
+                    a(href="#") УСЛОВИЯ И ГАРАНТИИ
+                li
+                    a(href="#") ЦЕНЫ И АКЦИИ
+                li
+                    a(href="#") ВАКАНСИИ
+                li
+                    a(href="#") ПАРТНЕРАМ
+                li
+                    a(href="#") КОНТАКТЫ
+
+    block content
+
+    .footer
+        .wrappContent.footerContent
+            .leftFooter
+                a.logo(href="#") LEKURS
+
+            .middleFooter
+                .phone
+                    i.icon.icon-mobile
+                    span БЕСПЛАТНЫЙ ЗВОНОК
+                    span 8 (812) 987 12 07
+                ul.menuFooter
+                    li  УСЛУГИ
+                    li
+                        a(href="#") Курсовые работы
+                    li
+                        a(href="#") Диплом
+                    li
+                        a(href="#") Контрольные работы
+                    li
+                        a(href="#") Рефераты
+                    li
+                        a(href="#") Эссе
+                    li
+                        a(href="#") Рецензии
+                    li
+                        a(href="#") Другие виды работ
+                    li
+                        a(href="#") Готовые работы
+            .rightFooter
+                ul.menuFoote
+                    li.title ЗАКАЗАТЬ РАБОТУ
+                    li О НАС
+                    li
+                        a(href="#") Цены и акции
+                    li
+                        a(href="#") Условия работы
+                    li
+                        a(href="#") О компании
+                    li
+                        a(href="#") Вакансии
+                    li
+                        a(href="#") Контакты
+                    li СОТРУДНИЧЕСТВО
+                    li
+                        a(href="#") Партнерам
+                    li
+                        a(href="#") Стать автором
+                    li
+                        a(href="#") Вебмастерам
+        .wrappContent
+            .copyright
+                .wrappCpr
+                    p @All rights reserved
+                    p 2016
+                    p Like us
+
+
+
+    script(src='../../lib/jquery/dist/jquery.min.js')
+    script(src='../../js/base.js')
+    //- prodaction
+    //- script(src='js/all.js')
+    block scripts

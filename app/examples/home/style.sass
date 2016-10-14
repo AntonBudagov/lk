@@ -1,0 +1,94 @@
+$floorH: 40px;
+$contW: 100%;
+$contH: 100%;
+$diameterBall: 100px
+
+body
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+    // display: flex;
+    font: 35px/1.3em 'Marck Script', cursive, Georgia;
+    // align-items: center;
+    // justify-content: center;
+    // box-sizing: border-box;
+    background: rgba(0,0,0, 0.1);
+
+
+
+.container
+    position: relative;
+    overflow: hidden;
+    width: $contW;
+    height: $contH;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.4);
+    background: #fff;
+
+
+.ball
+    position: absolute;
+    top: 0;
+    cursor: pointer
+    transform: translate3d(10px, 0, 0);
+    width: $diameterBall;
+    height: $diameterBall;
+    background: #ccc;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    will-change: transform;
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(240,207,20,1) 100%);
+
+
+.floor
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $floorH;
+    background: rgb(35, 125, 174);
+
+
+
+
+
+// $floorH: 40px;
+// $contW: 100%;
+// $contH: 100%;
+// $diameterBall: 100px;
+
+// body
+//     width: 100%;
+//     height: 100%;
+//     overflow: hidden;
+//     font: 35px/1.3em 'Marck Script', cursive, Georgia;
+//     cursor: pointer;
+
+
+// .container
+//     position: relative;
+//     overflow: hidden;
+//     width: $contW;
+//     height: $contH;
+//     box-shadow: 0 0 10px rgba(0,0,0, 0.4);
+//     background: #fff;
+
+
+// .ball
+//     position: absolute;
+//     top: 0;
+//     transform: translate3d(0, 0, 0);
+//     width: $diameterBall;
+//     height: $diameterBall;
+//     background: #ccc;
+//     border-radius: 50%;
+//     backface-visibility: hidden;
+//     will-change: transform;
+//     background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%, rgba(38,185,52,1) 100%);
+
+// .floor
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     height: $floorH;
+//     background: rgb(35, 125, 174);

@@ -1,0 +1,24 @@
+doctype html
+html(lang="ru")
+  head
+    //- base(target="_blank")
+    meta(charset="utf-8")
+    title Index
+    link(href="/css/build.min.css", rel="stylesheet")
+
+  body
+
+    - var listOfExamples = [];
+    - listOfExamples.push({title: 'Main Page', link: './examples/main-page/'})
+    - listOfExamples.push({title: 'УСЛОВИЯ ГАРАНТИИ', link: './examples/guarantee/'})
+    - listOfExamples.push({title: 'ЗАКАЗАТЬ РАБОТУ', link: './examples/order-work/'})
+    //- - listOfExamples.push({title: 'Card', link: '/examples/card/'})
+
+
+
+    ul.listOfExamples
+      each item in listOfExamples
+        li.listOfExamples__item
+          a.listOfExamples__link(href=item.link)!= item.title
+
+    footer.footer

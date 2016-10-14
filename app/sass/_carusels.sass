@@ -1,0 +1,103 @@
+.owl-nav
+  position: absolute
+  top: 50%
+  width: 100%
+  .owl-prev, .owl-next
+    font-size: 0
+    line-height: 0
+    position: absolute
+    display: block
+    width: 48px
+    height: 48px
+    margin-top: -24px
+    padding: 0
+    cursor: pointer
+    color: transparent
+    border: none
+    outline: none
+    background: transparent
+    background-repeat: no-repeat
+    display: inline-block
+    background-position: 50% 50%
+    transition: all .35s
+  .owl-prev
+    left: 0
+    +sprite($le-prew)
+    // background-image: url(../../images/icons/sprite.png)
+    // background-position: -284px -14px
+    // width: 10px
+    // height: 17px
+    display: table
+    &:before
+      content: ''
+      position: absolute
+    &:hover
+      // transform: translateX(5px)
+    &.disabled
+      opacity: .5
+  .owl-next
+    right: 0
+    // background-image: url(../../images/icons/sprite.png)
+    // background-position: -274px -14px
+    // width: 10px
+    // height: 17px
+    +sprite($le-next)
+    display: table
+    &:before
+      content: ''
+      position: absolute
+    // background-image: url(../images/icons/next.svg)
+    &:hover
+      // transform: translateX(-5px)
+    &.disabled
+      opacity: .5
+
+
+.owl-controls, .owl-nav
+  .owl-pagination, .owl-dots
+    position: relative
+    width: 100%
+    margin: 14px auto
+    text-align: center
+  .owl-dot
+    display: inline-block
+    zoom: 1
+    span
+      display: block
+      width: 23px
+      height: 23px
+      background-color: #aaa9a3
+      margin: 0 14px 0 0
+      border-radius: 50%
+    &.active
+      span
+        width: 29px
+        height: 29px
+        background-color: #004687
+
+.carusels
+  .owl-pagination, .owl-dots
+    justify-content: center
+
+.owl-dots
+  display: block
+  position: relative
+  text-align: center
+  margin: 14px auto
+
+.owl-carousel .owl-dot, .owl-page
+  display: inline-block
+  zoom: 1
+  span
+    width: 10px
+    height: 10px
+    margin: 5px 3px
+    background-color: #b7b7b7
+    display: block
+    transition: opacity 200ms ease
+    border-radius: 30px
+  &.active
+    span
+      background-color: #686868
+
+
