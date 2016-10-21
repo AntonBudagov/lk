@@ -1,0 +1,92 @@
+extends ../../layouts/index.jade
+
+block head-title
+    | - партнерская програма 2
+
+block styles
+    link(href="../../lib/owl.carousel/dist/assets/owl.carousel.min.css", rel="stylesheet")
+    link(href="style.css", rel="stylesheet")
+
+block scripts
+    script(src='../../lib/materialize/js/velocity.min.js')
+    script(src='../../lib/materialize/js/leanModal.js')
+    script(src='../../lib/owl.carousel/dist/owl.carousel.min.js')
+    script(src='main.js')
+
+block content
+    .container.page-affilateProgramm
+      .wrappContent
+        .photoWrapp
+          .wrappImg
+            img(src="../../images/partners/backPartners2.jpg", title="ЗАЙМИТЕСЬ ТЕМ, ЧТО ЛЮБИТЕ.")
+          .photoWrappDecription
+            h1 ПАРТНЕРСКАЯ ПРОГРАММА
+            p Предназначена для людей с проактивной жизненной позицией, ориентированных на достижение первоклассных результатов.
+            a.btn.defaultBtn(href="#") ЗАРЕГЕСТРИРОВАТЬСЯ
+        .affilateProgrammContent
+
+          h2 Здесь текст, в которм говорим, что мы пишем работы студентам пишем работы студентам
+          .affilateProgrammPlus
+            h3 Текст о том, что получают наши партнеры
+            .affilateProgrammPlusItem
+              .wrappImg
+                i.icon.icon-check
+              .desc
+                h4 гибкие условия и специальные цены
+            .affilateProgrammPlusItem
+              .wrappImg
+                i.icon.icon-layrs
+              .desc
+                h4 максимальное увеличение списка учебных дисциплин
+            .affilateProgrammPlusItem
+              .wrappImg
+                i.icon.icon-m-w
+              .desc
+                h4 собственная база исполнителей (авторов)
+            .affilateProgrammPlusItem
+              .wrappImg
+                i.icon.icon-like
+              .desc
+                h4 удобная система взаиморасчетов
+            .affilateProgrammPlusItem
+              .wrappImg
+                i.icon.icon-loop
+              .desc
+                h4 выполнение работ курирует отдел контроля качества
+            .affilateProgrammPlusItem
+              .wrappImg
+                i.icon.icon-think
+              .desc
+                h4 личный кабинет и персональный менеджер
+          .descInfo
+            p Текст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыобработать силамекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммыекст о с ути партнерсокй прогарммы
+            a.btn.blackBtn.modal-trigger(href="#modal1") ЗАРЕГЕСТРИРОВАТЬСЯ
+
+
+    form.modalForm#modal1.modal
+      .groupInput
+        label Фамилия
+          span.required=" *"
+        input(type="text" placeholder="Фамилия")
+      .groupInput
+        label
+          | Имя
+          span.required=" *"
+        input(type="text" placeholder="Имя")
+      .groupInput
+        label
+          | Код партнера
+          span.required=" *"
+        input(type="text" placeholder="Код партнера")
+      .groupInput
+        label
+          | Телефон
+          span.required=" *"
+        input.phoneValide(type="text" placeholder="+7 ")
+      .groupInput
+        label
+          | e-mail
+          span.required=" *"
+        input(type="text" placeholder="e-mail")
+      input.blackSubmit(type="submit" value="ОСТАВИТЬ ЗАЯВКУ")
+

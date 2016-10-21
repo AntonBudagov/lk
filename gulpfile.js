@@ -53,7 +53,7 @@ gulp.task('compress', function (cb) {
         gulp.src('app/js/*.js'),
         sourcemaps.init(),
         uglify(options),
-        concat('base.js'),
+        concat('main.js'),
         //rename({suffix: '.min'}),
         sourcemaps.write(),
         gulp.dest(outputDir + '/js')
@@ -82,7 +82,7 @@ gulp.task('layout', function() {
 */
 gulp.task('examplesJade', function() {
   return gulp.src('app/examples/**/*.jade')
-   .pipe(jade()).on('error', notify.onError())
+   .pipe(jade({pretty: true})).on('error', notify.onError())
    .pipe(gulp.dest(baseDirExamples));
 });
 
@@ -220,6 +220,15 @@ gulp.task('bower', function() {
       // ver. 2.1.6
       "owl.carousel":{
         main: ["./dist/*.min.js", "./dist/assets/*.min.css", "./dist/assets/*.gif"]
+      },
+      "jquery.maskedinput":{
+        main: ["./**/*.min.js"]
+      },
+      "materialize": {
+        main: ["./js/leanModal.js", "./**/velocity.min.js"]
+      },
+      "air-datepicker": {
+        main: ["./**/*min.js", "./**/*.min.css"]
       },
     }
   })).pipe(gulp.dest('dist/lib'));

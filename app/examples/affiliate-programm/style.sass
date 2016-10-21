@@ -1,0 +1,133 @@
+@import ./app/sass/_include
+$line-height: 1
+$lines-to-show: 2
+$font-size: 48px
+.page-affilateProgramm
+    padding-bottom: 80px
+    h2
+        font-size: 21px
+    .btn
+        width: 286px
+        height: 31px
+        font-size: 15px
+        line-height: 31px
+        font-weight: 700
+    .photoWrapp
+      position: relative
+      min-height: 359px
+      .wrappImg
+        position: absolute
+      .photoWrappDecription
+        text-align: center
+        position: relative
+        z-index: 2
+        padding-top: 90px
+        color: #fff
+        max-width: 520px
+        margin: 0 auto
+
+        h1
+          font-size: 48px
+          color: #fff
+          height: $font-size*$line-height*$lines-to-show
+          -webkit-line-clamp: $lines-to-show
+          display: block /* Fallback for non-webkit */
+          display: -webkit-box
+          +text-overflow-multiline
+        .desc
+          margin-top: 21px
+        p
+          margin-top: 21px
+          font-size: 15px
+          font-weight: 400
+          line-height: 16px
+          text-align: center
+          // +text-overflow
+        .btn
+          margin-top: 52px
+    .affilateProgrammContent
+        padding: 30px 15px
+        h2
+            max-width: 885px
+            line-height: 28px
+            margin: 0 auto
+            text-align: center
+        p
+            font-size: 18px
+            font-weight: 400
+            line-height: 28px
+        .affilateProgrammDecription
+            p
+                text-align: center
+        .affilateProgrammPoint
+            h2
+                margin-bottom: 35px
+            p
+                text-align: left
+
+        .exampleGroup
+            max-width: 855px
+            margin: 49px auto 35px
+            text-align: center
+            font-size: 0
+            h2
+                margin-bottom: 59px
+            .exampleGroupDesc
+                margin: 55px auto 53px
+            .exampleGroupItem
+                display: inline-block
+                vertical-align: top
+                width: 33.33%
+                width:
+                .price
+                    font-size: 48px
+                    font-weight: 400
+                    line-height: 21px
+                    margin-bottom: 40px
+                .desc
+                    font-size: 15px
+                    font-weight: 400
+                    line-height: 21px
+
+
+        .affilateProgrammAdb
+            h2
+
+                margin-bottom: 57px
+            .affilateProgrammAdbItem
+                display: inline-block
+                width: 472px
+                margin-right: 180px
+                margin-bottom: 66px
+                &:nth-child(odd)
+                    margin-right: 0
+                .wrappImg
+                    float: left
+                    width: 61px
+                    height: 61px
+                    position: relative
+                    margin-right: 22px
+                    i
+                        position: absolute
+                        left: 0
+                        right: 0
+                        margin: auto
+                        bottom: 0
+                        top: 0
+                .desc
+                    float: left
+                    width: 389px
+
+                    h4
+                        font-size: 15px
+                        line-height: 21px
+                        font-weight: 400
+                        font-family: $defaultFont
+                        text-transform: none
+                    p
+                        font-weight: 300
+                        font-family: $defaultFontLight
+
+
+
+

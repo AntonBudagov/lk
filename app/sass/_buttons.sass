@@ -12,20 +12,23 @@
   transition: all .22s
   cursor: pointer
   text-align: center
-  &:active
+  &:hover
     background-color: #fff
     color: $defaultColor
 .defaultBtn
-
+  width: auto
+  padding: 0 16px 0 17px
+  border-radius: 6px
 
 .blackBtn
   width: auto
   // width: 193px
-  border: 1px solid #222
+  border: 1px solid #262423
   padding: 0 10px 0 20px
   font-size: 10px
-  &:active
-    background-color: #222
+  color: #262423
+  &:hover
+    background-color: #262423
     color: #fff
 
 .btnOrangeHidden
@@ -37,7 +40,7 @@
   height: 20px
   line-height: 20px
   background-color: #eb9c80
-  &:active
+  &:hover
     background-color: #222
     color: #fff
 
@@ -66,18 +69,61 @@
   &:hover
     background-color: #eb9c80
 
+.btnBrown
+  width: 185px
+  border-radius: 4px
+  height: 31px
+  line-height: 31px
+  font-size: 15px
+  font-weight: 700
+  border: solid 1px #262423
+  color: #262423
+  &:hover
+    color: #fff
+    background-color: #262423
+.btnOrangeB
+  @extend .btnBrown
+  border: solid 1px #eb9c80
+  color: #eb9c80
+  &:hover
+    color: #fff
+    background-color: #eb9c80
+
 
 input[type=submit]
   background-color: #00899f
   width: 176px
-  height: 30px
-  line-height: 30px
+  height: 31px
+  line-height: 24px
   text-align: center
   font-size: 15px
   font-weight: 700
+  border-radius: 4px
   padding: 0
   margin: 0
   transition: all .35s
+  text-transform: uppercase
+  cursor: pointer
   &:hover, &:active
     background-color: #3f6f71
     color: #fff
+
+  &.greenSubmit
+    border: none
+    width: 184px
+    background-color: #96c388
+    color: #fff
+    line-height: 28px
+  &.blackSubmit
+    border: none
+    width: 191px
+    border: solid 1px #262423
+    color: #262423
+    line-height: 28px
+    background-color: #fff
+    &:hover
+      background-color: #262423
+      color: #fff
+
+
+

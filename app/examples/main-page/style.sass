@@ -36,17 +36,6 @@ $font-size: 48px
       margin-top: 52px
 
 
-.iocn-default
-  display: table
-  background-image: url(../../images/icons/icon-default.png)
-  background-repeat: no-repeat
-  width: 68px
-  height: 64px
-  margin: 0 auto
-.icon-svg
-  @extend .iocn-default
-  background-image: url(../../svg/1.svg)
-
 // orderUs
 .orderUs
   text-align: center
@@ -57,6 +46,7 @@ $font-size: 48px
     width: 100%
     margin: 66px auto 0
     text-transform: uppercase
+    font-size: 0
     &:after
       content: ''
       display: inline-block
@@ -66,6 +56,7 @@ $font-size: 48px
       width: 172px
       text-align: center
       display: inline-block
+      vertical-align: top
       .btnOrangeHidden
         margin-bottom: 17px
       &:hover
@@ -91,43 +82,19 @@ $font-size: 48px
 
       &:nth-child(4n)
         margin-right: 0
-      // &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8)
-      //   margin-bottom: 0
 
 // section3
-.clear
-  // clear: both
 .section3
   background-color: #f1f0ed
-  height: 500px
   width: 100%
   text-align: center
   padding-top: 26px
-  .sectionContent
-    text-align: justify
-    max-width: 904px
-    width: 100%
-    margin: 85px auto 0
-    text-transform: uppercase
-    display: block
-
-    &:after
-      content: ''
-      display: inline-block
-      width: 100%
+  .sectionContent, .fourPlus
     &-item
-      // opacity: .2
-      text-align: center
-      display: inline-block
-      vertical-align: top
-      width: auto
-      margin-right: 137px
-      text-decoration: none
       &.active
         opacity: 1
         h4
           color: #1e1e1c
-
 
       &:nth-child(4n)
         margin-right: 0
@@ -193,10 +160,10 @@ $font-size: 48px
           transform: translate3d(0, 0, 0)
       &:nth-child(2).active ~ .menu__line
         &:after
-          transform: translate3d(100%, 0, 0)
+          transform: translate3d(83%, 0, 0)
       &:nth-child(3).active ~ .menu__line
         &:after
-          transform: translate3d(200%, 0, 0)
+          transform: translate3d(215%, 0, 0)
       &:nth-child(4).active ~ .menu__line
         &:after
           transform: translate3d(300%, 0, 0)
@@ -212,10 +179,12 @@ $font-size: 48px
 
   .decription
     position: relative
-    margin: 0 auto
+    margin: 35px auto
     text-align: center
     width: 100%
     max-width: 750px
+    height: 75px
+    overflow: hidden
     .desc
       opacity: 0
       visibility: hidden
@@ -243,10 +212,11 @@ $font-size: 48px
     font-weight: 700
   .orderBlocks
     width: 100%
-    max-width: 903px
+    max-width: 902px
     margin: 70px auto 0
     position: relative
     z-index: 1
+    font-size: 0
     &:after
       content: ''
       position: absolute
@@ -258,7 +228,6 @@ $font-size: 48px
       z-index: 2
       +sprite($back-section4)
 
-
     .orderItem
       display: inline-block
       width: 250px
@@ -269,7 +238,7 @@ $font-size: 48px
       margin-right: 75px
       .icon
         position: absolute
-        top: -45px
+        top: -36px
         left: 0
         right: 0
         z-index: 3
@@ -316,6 +285,8 @@ $font-size: 48px
     //   &:first-of-type
     //     border: none
 
+
+
     .useInfo
       color: #a6a19b
       position: relative
@@ -331,11 +302,15 @@ $font-size: 48px
         font-size: 12px
         font-weight: 700
         margin-bottom: 9px
+        display: inline-block
+        text-decoration: none
+        color: #a6a19b
       .desc
         font-size: 10px
         font-weight: 400
+
     .focusItem
-      .useInfo
+      .useInfo, .name, .desc
         color: #262422
 
 
@@ -364,14 +339,3 @@ $font-size: 48px
 .section6
   text-align: center
   padding: 26px 0
-  .payments
-    display: table
-    margin: 42px auto 0
-    .payment
-      width: 71px
-      display: inline-block
-      margin: 0 10px
-      &:first-child
-        margin-left: 0
-      &:last-child
-        margin-right: 0

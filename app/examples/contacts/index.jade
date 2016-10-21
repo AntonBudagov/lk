@@ -1,0 +1,33 @@
+extends ../../layouts/index.jade
+
+block head-title
+    | - НАШИ КОНТАКТЫ
+
+block styles
+    link(href="style.css", rel="stylesheet")
+    link(href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+
+block scripts
+    script(src='main.js')
+
+block content
+    .container.page-contact
+      .wrappContentSidbar
+        h1 НАШИ КОНТАКТЫ
+        .contactWrapp
+          .wrappImg
+            img(src="../../images/elements/world-map.png", alt="")
+          .freeCall
+            h4 БЕСПЛАТНЫЙ ЗВОНОК ПО РОССИИ
+            .phone
+              i.icon.icon-mobile-black
+              span 8 800 000 00 00
+            a.btn.blackBtn(href="") ЗАКАЗАТЬ РАБОТУ
+          .infoWork
+            h4 ГРАФИК РАБОТЫ ОФИСА
+            p Пн-Вс:09:00-24:00
+            p Мы работаем по всей России!
+
+
+
+

@@ -1,0 +1,74 @@
+@import ./app/sass/_include
+.page-authors
+    .fourPlusForAuthor
+        &-item
+            display: inline-block
+            width: 241px
+            text-align: center
+            vertical-align: top
+            margin-right: 105px
+            margin-top: 60px
+            h4
+                margin: 26px 0 0
+                font-size: 15px
+                font-weight: 700
+            p
+                font-size: 15px
+                font-weight: 300
+                margin-top: 0
+            .circle
+                border-radius: 50%
+                width: 108px
+                height: 108px
+                background-color: #e6cf52
+                display: inline-block
+                vertical-align: middle
+                position: relative
+                .icon
+                    position: absolute
+                    top: 0
+                    right: 0
+                    margin: auto
+                    left: 0
+                    bottom: 0
+            &:nth-child(2)
+                margin-right: 0
+                .circle
+                    background-color: #00899f
+            &:nth-child(3)
+                .circle
+                    background-color: #96c388
+            &:nth-child(4)
+                margin-right: 0px
+                .circle
+                    background-color: #eaa97f
+
+    .groupMan
+        margin: 74px auto 0
+        text-align: center
+        &::after
+            content: ''
+            display: table
+            line-height: 0
+            clear: both
+        .icon
+            display: inline-block
+            margin-right: 3px
+            &:last-child
+                margin-right: 0
+    .btnBrown
+        margin: 25px auto 0
+        display: block
+
+    .infoContact
+        width: 318px
+        border: solid 1px #bcb8b2
+        border-radius: 2px
+        margin-top: 40px
+        &-item
+          height: 79px
+          border-bottom: solid 1px #bcb8b2
+          width: 100%
+          padding: 18px 23px 0
+          &:last-child
+            border: none

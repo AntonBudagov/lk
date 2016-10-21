@@ -82,19 +82,8 @@ block content
       .wrappContent
         h2 НАШИ ПРЕИМУЩЕСТВА
 
-        .sectionContent
-          a.sectionContent-item.active(href="#")
-            i.icon.icon-le-smart-price
-            h4 РАЗУМНЫЕ ЦЕНЫ
-          a.sectionContent-item(href="#")
-            i.icon.icon-le-garant
-            h4 Гарантии качества
-          a.sectionContent-item(href="#")
-            i.icon.icon-le-human
-            h4 Квалифицированные авторы
-          a.sectionContent-item(href="#")
-            i.icon.icon-le-short-time
-            h4 Короткие сроки
+        .sectionContent.fourPlus
+          +fourPlus
           .pathLine.menu__line
             .dot.active
             .dot
@@ -141,22 +130,27 @@ block content
           .useInfo.focusItem
             .avatar
               img(src="../../images/main-page/review-carusel/user1.jpg", alt="Екатерина Белик")
-            a.name(href="https://vk.com/id154377208") Екатерина Белик
+            a.name(href="https://vk.com/id154377208" target="_blank") Екатерина Белик
             .desc студентка 5 курса СПБГУКИ
           .useInfo
             .avatar
-              img(src="../../images/main-page/review-carusel/user2.jpg", alt="Анна Литовская")
-            .name Анна Литовская
+              img(src="../../images/main-page/review-carusel/user2.jpg", alt="Анна Егошина")
+            a.name(href="https://vk.com/id_goshanchik" target="_blank") Анна Егошина
             .desc студентка 5 курса СПБГУКИ
           .useInfo
             .avatar
-              img(src="../../images/main-page/review-carusel/user3.jpg", alt="Анна Литовская")
-            .name Анна Литовская
+              img(src="../../images/main-page/review-carusel/user3.jpg", alt="Елена Кузнецова")
+            a.name(href="https://vk.com/id1870118" target="_blank") Елена Кузнецова
             .desc студентка 5 курса СПБГУКИ
           .useInfo
             .avatar
-              img(src="../../images/main-page/review-carusel/user1.jpg", alt="Анна Литовская")
-            .name Анна Литовская
+              img(src="../../images/main-page/review-carusel/user1.jpg", alt="Власта Лужинская")
+            a.name(href="https://vk.com/la_vlasta" target="_blank") Екатерина Белик
+            .desc студентка 5 курса СПБГУКИ
+          .useInfo
+            .avatar
+              img(src="../../images/main-page/review-carusel/user1.jpg", alt="Иван Бербасов")
+            a.name(href="https://vk.com/id92115430" target="_blank") Иван Бербасов
             .desc студентка 5 курса СПБГУКИ
         .description
           .desc.active Выражаю благодарность Компании ЛЕКУРС за быстрое и самое главное качественное выполнение моей работы. За 4 дня написали мне курсовую работу, которую я защитила на отлично! Цена при этом вполне адекватная.
@@ -166,30 +160,6 @@ block content
           .desc Мало кто соглашался взяться за мою курсовую работу по сложной тематике. Не сожалею, что обратился в ЛЕКУРС. Работа была предоставлена с учетом всех требований руководителя курсового проекта в сжатые сроки и по доступной цене. Рекомендую!
 
     .section6
-      .wrappContent
-        h2 Удобство оплаты
-
-        .payments
-          .payment
-            img(src="../../images/payments/rub.jpg", title="rub")
-          .payment
-            img(src="../../images/payments/visa.jpg", title="visa")
-          .payment
-            img(src="../../images/payments/mastercard.jpg", title="mastercard")
-          .payment
-            img(src="../../images/payments/banks.jpg", title="banks")
-          .payment
-            img(src="../../images/payments/yandexmoney.jpg", title="yandexmoney")
-          .payment
-            img(src="../../images/payments/webmoney.jpg", title="webmoney")
-          .payment
-            img(src="../../images/payments/qiwi.jpg", title="qiwi")
-          .payment
-            img(src="../../images/payments/conect.jpg", title="Связной")
-          .payment
-            img(src="../../images/payments/megafon.jpg", title="Мегафон")
-          .payment
-            img(src="../../images/payments/mts.jpg", title="Mts")
-        .infoPayment  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, optio.
+      +Paymonts
 
 

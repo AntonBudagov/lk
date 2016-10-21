@@ -1,0 +1,83 @@
+extends ../../layouts/index.jade
+
+block head-title
+    | - О КОМПАНИИ
+
+block styles
+    link(href="../../lib/owl.carousel/dist/assets/owl.carousel.min.css", rel="stylesheet")
+    link(href="style.css", rel="stylesheet")
+
+block scripts
+    script(src='../../lib/owl.carousel/dist/owl.carousel.min.js')
+    script(src='main.js')
+
+block content
+    .container.page-about
+      .wrappContentSidbar
+        .content
+          h1 О КОМПАНИИ
+          p Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании
+          #sliderAbotu.owl-carousel
+            img(src="../../images/about/slide1.jpg", alt="")
+            img(src="../../images/about/slide1.jpg", alt="")
+            img(src="../../images/about/slide1.jpg", alt="")
+            img(src="../../images/about/slide1.jpg", alt="")
+        .rightSibar
+          form.form.formOneClick
+            .leter
+              i.icon.icon-doc
+              .leterWrapp
+                span М
+                span Ы
+                span С
+                span В
+                span Я
+                span Ж
+                span Е
+                span М
+                span С
+                span Я
+                span С
+                span В
+                span А
+                span И
+                span С
+                span А
+                span М
+                span И!
+            .title ЗАЯВКА В ОДИН КЛИК
+            input.phoneValidation(type="tel" placeholder="ВВЕДИТЕ НОМЕР ТЕЛЕФОНА")
+            .select
+              span.default-value ВЫБЕРИТЕ ТИП РАБОТЫ
+              ul
+                li Lorem Ipsum
+                li Lorem Ipsum Ipsum
+                li Lorem Ipsum Ipsum
+                li Lorem Ipsum
+                li Lorem Ipsum Ipsum Ipsum
+                li Lorem Ipsum
+                li Lorem Ipsum
+                li Lorem Ipsum Ipsum
+                li Lorem
+                li Lorem Ipsum
+                li Ipsum
+              input(type="submit" value="ОФОРМИТЬ ЗАЯВКУ").greenSubmit
+
+          .infoContact
+            .infoContact-item
+              i.icon.icon-earth
+            .infoContact-item
+              .phone
+                i.icon.icon-mobile-black
+                .text
+                  span БЕСПЛАТНЫЙ ЗВОНОК
+                  span 8 800 000 00 00
+            .infoContact-item
+              .workTime
+                i.icon.icon-flag
+                .text
+                  span Пн-Вс:09:00-24:00
+                  span Пн-Вс:09:00-24:00
+
+      .wrappContent
+        +OrderBlock

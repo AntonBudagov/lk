@@ -1,0 +1,101 @@
+extends ../../layouts/index.jade
+
+block head-title
+    | - партнерская програма
+
+block styles
+    link(href="../../lib/owl.carousel/dist/assets/owl.carousel.min.css", rel="stylesheet")
+    link(href="style.css", rel="stylesheet")
+
+block scripts
+    script(src='../../lib/materialize/js/velocity.min.js')
+    script(src='../../lib/materialize/js/leanModal.js')
+    script(src='../../lib/owl.carousel/dist/owl.carousel.min.js')
+    script(src='main.js')
+
+block content
+    .container.page-affilateProgramm
+      .wrappContent
+        .photoWrapp
+          .wrappImg
+            img(src="../../images/partners/backPartners1.jpg", title="ЗАЙМИТЕСЬ ТЕМ, ЧТО ЛЮБИТЕ.")
+          .photoWrappDecription
+            h1 ПАРТНЕРСКАЯ ПРОГРАММА
+            p Предназначена для людей с проактивной жизненной позицией, ориентированных на достижение первоклассных результатов.
+            a.btn.defaultBtn(href="#") ЗАРЕГЕСТРИРОВАТЬСЯ
+        .affilateProgrammContent
+
+          h2 Сотрудники компании подготавливают студенческие работы и научные исследования любой сложности.
+          .affilateProgrammDecription
+            p Предоставляем средние расценки на заказ и прайс на услуги исполнителей специально для партнеров. Ваш доход — разница между этими ценами.
+            .exampleGroup
+              h2 НАПРИМЕР
+              .exampleGroupItem
+                .price 1600 ₷
+                .desc Стоимость написания курсовой в компании-конкуренте
+              .exampleGroupItem
+                .price 700 ₷
+                .desc Стоимость, которую мы предлагаем партнерам
+              .exampleGroupItem
+                .price 900 ₷
+                .desc Ваш заработок
+              .exampleGroupDesc Сделайте заказ на написание, проследите за выполнением заявки, отправьте результат клиенту и получите вознаграждение!
+              a.btn.blackBtn.modal-trigger(href="#modal1") ЗАРЕГЕСТРИРОВАТЬСЯ
+          .affilateProgrammPoint
+            h2 СУТЬ ПАРТНЕРСКОЙ ПРОГРАММЫ
+
+            p Многие студенты вузов по разным причинам не успевают писать контрольные, доклады, курсовые, рефераты и другие работы. Проще и быстрее обратиться к профессионалам и получить готовый результат в минимальные сроки. Студенты начинают искать подходящие варианты в интернете, опрашивать друзей, знакомых и одногруппников. Станьте участником партнерской программы и обеспечьте себе гарантированный заработок. Вы собираете заказы у студентов и отправляете нам, после чего сотрудники компании берут на себя выполнение заданий. Минимум усилий гарантируют стабильный доход!
+          .affilateProgrammAdb
+            h2 ПРЕИМУЩЕСТВА
+            .affilateProgrammAdbItem
+              .wrappImg
+                i.icon.icon-star
+              .desc
+                h4 Работа с проверенной компанией
+                p текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности
+            .affilateProgrammAdbItem
+              .wrappImg
+                i.icon.icon-alarm-clock-brown
+              .desc
+                h4 Свободный график
+                p текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности
+            .affilateProgrammAdbItem
+              .wrappImg
+                i.icon.icon-blackbord
+              .desc
+                h4 Уровень дохода зависит только от Вас
+                p текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности
+            .affilateProgrammAdbItem
+              .wrappImg
+                i.icon.icon-info
+              .desc
+                h4 Обучение и информационная поддержка
+                p текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности текст о надежности
+
+    form.modalForm#modal1.modal
+      .groupInput
+        label Фамилия
+          span.required=" *"
+        input(type="text" placeholder="Фамилия")
+      .groupInput
+        label
+          | Имя
+          span.required=" *"
+        input(type="text" placeholder="Имя")
+      .groupInput
+        label
+          | Код партнера
+          span.required=" *"
+        input(type="text" placeholder="Код партнера")
+      .groupInput
+        label
+          | Телефон
+          span.required=" *"
+        input.phoneValide(type="text" placeholder="+7 ")
+      .groupInput
+        label
+          | e-mail
+          span.required=" *"
+        input(type="text" placeholder="e-mail")
+      input.blackSubmit(type="submit" value="ОСТАВИТЬ ЗАЯВКУ")
+

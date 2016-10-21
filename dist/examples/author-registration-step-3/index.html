@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=no">
+    <title>Name Project- регистрация автора</title>
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Marck+Script&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="wrappContent">
+        <div class="topHeader"><a href="" class="logo">LEKURS</a>
+          <div class="phoneContainer">
+            <div class="tel">8 (812) 987 12 07</div>
+          </div>
+          <div class="feedbackContainer"><a href="#" class="link">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a><a href="#" class="link">ЗАКАЗАТЬ РАБОТУ</a></div>
+        </div>
+        <ul class="menu">
+          <li><a href="../../examples/about/">О КОМПАНИИ</a></li>
+          <li><a href="../../examples/guarantee/">УСЛОВИЯ И ГАРАНТИИ</a></li>
+          <li><a href="../../examples/price-stock">ЦЕНЫ И АКЦИИ</a></li>
+          <li><a href="#">ВАКАНСИИ</a></li>
+          <li><a href="../../examples/partners/">ПАРТНЕРАМ</a></li>
+          <li><a href="../../examples/contacts">КОНТАКТЫ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container page-authors-register">
+      <div class="wrappContent">
+        <div class="step3">
+          <div class="formStepRegister">
+            <div class="formStepRegister-item">
+              <div class="top">1</div>
+              <div class="bottom">Начало регистрации</div>
+            </div>
+            <div class="formStepRegister-item">
+              <div class="top">2</div>
+              <div class="bottom">Сведения о вас</div>
+            </div>
+            <div class="formStepRegister-item">
+              <div class="top">3</div>
+              <div class="bottom">Выбор профиля</div>
+            </div>
+            <div class="formStepRegister-item">
+              <div class="top">4</div>
+              <div class="bottom">Окончание регистрации</div>
+            </div>
+            <div class="lineProgress">
+              <div class="dot active"></div>
+              <div class="dot active"></div>
+              <div class="dot active"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+          <div class="formStepRegisterProgress">
+            <div class="work">
+              <h2>Работа</h2>
+              <div class="leftFormContent">
+                <div class="locationWork">
+                  <div class="groupInput">
+                    <label>Место работы<span class="required"> *</span></label>
+                    <input type="text" placeholder="Место работы">
+                  </div>
+                  <div class="groupInput">
+                    <label>Должность<span class="required"> *</span></label>
+                    <input type="text" placeholder="Должность">
+                  </div>
+                </div>
+                <div class="addLocationWork addInfo">+ добавить еще место работы</div>
+              </div>
+              <div class="rightFormContent">
+                <div class="groupInput">
+                  <label>Опыт работы<span class="required"> *</span></label>
+                  <input type="text" placeholder="Опыт работы">
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="education">
+              <h2>Образование</h2>
+              <div class="educations">
+                <div class="educationWrapp">
+                  <div class="leftFormContent">
+                    <div class="educationList">
+                      <div class="groupInput">
+                        <label>ВУЗ<span class="required"> *</span></label>
+                        <input type="text" placeholder="ВУЗ">
+                      </div>
+                      <div class="groupInput">
+                        <label>Факультет<span class="required"> *</span></label>
+                        <input type="text" placeholder="Факультет">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rightFormContent">
+                    <div class="groupInput">
+                      <label>Специальность<span class="required"> *</span></label>
+                      <input type="text" placeholder="Специальность">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="addLocationEducation addInfo">+ добавить еще образование</div>
+            </div>
+            <hr>
+            <div class="fileUpload upladDoc addInfo"><span>+ Приекрепить документы об образовании</span>
+              <input type="file" class="upload">
+            </div>
+            <div class="selections">
+              <h2>Сотрудничество с нами вы рассматриваете как*</h2>
+              <div class="groupRadio">
+                <input name="group1" type="radio" id="group1-test1" checked>
+                <label for="group1-test1">Основной источник дохода</label>
+              </div>
+              <div class="groupRadio">
+                <input name="group1" type="radio" id="group1-test2">
+                <label for="group1-test2">Дополнительный</label>
+              </div>
+              <div class="groupRadio">
+                <input name="group1" type="radio" id="group1-test3">
+                <label for="group1-test3">Эпизодический заработок</label>
+              </div>
+            </div>
+            <div class="selections">
+              <h2>Сколько времени вы хотите уделять работе?*</h2>
+              <div class="groupRadio">
+                <input name="group2" type="radio" id="group2-test1" checked>
+                <label for="group2-test1">несколько часов в неделю</label>
+              </div>
+              <div class="groupRadio">
+                <input name="group2" type="radio" id="group2-test2">
+                <label for="group2-test2">менее 2 часов в день</label>
+              </div>
+              <div class="groupRadio">
+                <input name="group2" type="radio" id="group2-test3">
+                <label for="group2-test3">от 3 до 6 часов в день</label>
+              </div>
+              <div class="groupRadio">
+                <input name="group2" type="radio" id="group2-test4">
+                <label for="group2-test4">более 6 часов в день</label>
+              </div>
+            </div>
+            <div class="selections">
+              <h2>Какой опыт написания работ в этой сфере?</h2>
+              <div class="groupRadio">
+                <input name="group3" type="radio" id="group3-test1" checked>
+                <label for="group3-test1">Ранее не писал(а)</label>
+              </div>
+              <div class="groupRadio">
+                <input name="group3" type="radio" id="group3-test2">
+                <label for="group3-test2">Менее 1 года</label>
+              </div>
+              <div class="groupRadio">
+                <input name="group3" type="radio" id="group3-test3">
+                <label for="group3-test3">От 1 до 3 лет</label>
+              </div>
+              <div class="groupRadio">
+                <input name="group3" type="radio" id="group3-test4">
+                <label for="group3-test4">Более 3 лет</label>
+              </div>
+            </div>
+            <div class="selections">
+              <h2>Ваши ожидания дохода в месяц:</h2>
+              <div class="groupRadio">
+                <input name="group4" type="radio" id="group4-test1" checked>
+                <label for="group4-test1">до 10 тыс. руб.</label>
+              </div>
+              <div class="groupRadio">
+                <input name="group4" type="radio" id="group4-test2">
+                <label for="group4-test2">от 10 до 25 тыс.руб.</label>
+              </div>
+              <div class="groupRadio">
+                <input name="group4" type="radio" id="group4-test3">
+                <label for="group4-test3">от 25 до 55 тыс. руб.</label>
+              </div>
+              <div class="groupRadio">
+                <input name="group4" type="radio" id="group4-test4">
+                <label for="group4-test4">от 55 тыс. руб.</label>
+              </div>
+            </div>
+            <div class="selections">
+              <h2>Работы какой  сложности вы готовы выполнять*</h2>
+              <div class="groupRadio">
+                <input name="group5" type="radio" id="group5-test1" checked>
+                <label for="group5-test1">Предпочтительнее научные (диссертации, статьи, исследования)</label>
+              </div>
+              <div class="groupRadio">
+                <input name="group5" type="radio" id="group5-test2">
+                <label for="group5-test2">Предпочтительнее сложные (дипломы, курсовые и т.п.)</label>
+              </div>
+              <div class="groupRadio">
+                <input name="group5" type="radio" id="group5-test3">
+                <label for="group5-test3">Предпочтительнее только простые (рефераты, контрольные, эссе)</label>
+              </div>
+              <div class="groupRadio">
+                <input name="group5" type="radio" id="group5-test4">
+                <label for="group5-test4">Сложность не имеет значения, любые</label>
+              </div>
+            </div>
+            <div class="selections">
+              <h2>Выберите предметы, по которым вы готовы выполнять работы*</h2>
+              <div class="groupList checkBoxCounter">
+                <div class="count"><span>Сейчас выбрано:</span><span id="count"> 0</span></div>
+                <ul>
+                  <li>
+                    <div class="title">Гуманитарное:</div><span>+</span>
+                    <ul class="panel">
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test1">
+                        <label for="list-test1">Дизайн</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test2">
+                        <label for="list-test2">Журналистика</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test3">
+                        <label for="list-test3">Искусство</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test4">
+                        <label for="list-test4">История</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test5">
+                        <label for="list-test5">Культура</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test6">
+                        <label for="list-test6">Литература</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test7">
+                        <label for="list-test7">Международные отношения</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test8">
+                        <label for="list-test8">Педагогика</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test9">
+                        <label for="list-test9">Политология</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test10">
+                        <label for="list-test10">Психология</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test11">
+                        <label for="list-test11">Право</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test12">
+                        <label for="list-test12">Реклама и PR</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test13">
+                        <label for="list-test13">СКД</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test14">
+                        <label for="list-test14">Социология</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test15">
+                        <label for="list-test15">Страноведение</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test16">
+                        <label for="list-test16">Туризм</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test17">
+                        <label for="list-test17">Философия</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test18">
+                        <label for="list-test18">Языкознание</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test19">
+                        <label for="list-test19">Языки (переводы)</label>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="title">Естественное:</div><span>+</span>
+                    <ul class="panel">
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list2-test1">
+                        <label for="list2-test1">Астрономия</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list2-test2">
+                        <label for="list2-test2">Археология</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list2-test3">
+                        <label for="list2-test3">Биология</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list2-test4">
+                        <label for="list2-test4">География</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list2-test5">
+                        <label for="list2-test5">Геология</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list2-test6">
+                        <label for="list2-test6">Естествознание</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list2-test7">
+                        <label for="list2-test7">Медицина</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list2-test8">
+                        <label for="list2-test8">Химия</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list2-test9">
+                        <label for="list2-test9">Экология</label>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="title">Техническое:</div><span>+</span>
+                    <ul class="panel">
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test1">
+                        <label for="list3-test1">Высшая математика</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test2">
+                        <label for="list3-test2">Материаловедение</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test3">
+                        <label for="list3-test3">Машиностроение</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test4">
+                        <label for="list3-test4">Издательское дело</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test5">
+                        <label for="list3-test5">Информатика</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test6">
+                        <label for="list3-test6">Механика</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test7">
+                        <label for="list3-test7">Полиграфия</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test8">
+                        <label for="list3-test8">Программирование</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test9">
+                        <label for="list3-test9">Процессы и аппараты</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list-test10">
+                        <label for="list3-test10">Сопротивление материалов</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test11">
+                        <label for="list3-test11">Строительство</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test12">
+                        <label for="list3-test12">Теория машин и механизмов</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test13">
+                        <label for="list3-test13">Транспорт</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test14">
+                        <label for="list3-test14">Физика</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test15">
+                        <label for="list3-test15">Чертежи</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list3-test16">
+                        <label for="list3-test16">Электроника, электротехника</label>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="title">Экономическое:</div><span>+</span>
+                    <ul class="panel">
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test1">
+                        <label for="list4-test1">Антикризисное управление</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test2">
+                        <label for="list4-test2">Банковское дело</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test3">
+                        <label for="list4-test3">Бизнес планирование</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test4">
+                        <label for="list4-test4">Бухучет и аудит</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test5">
+                        <label for="list4-test5">Внешнеэкономическая деятельность</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test6">
+                        <label for="list4-test6">ВЭД</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test7">
+                        <label for="list4-test7">Деньги</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test8">
+                        <label for="list4-test8">Государственное и муниципальное управление</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test9">
+                        <label for="list4-test9">Деловой этикет</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test10">
+                        <label for="list4-test10">Кредит</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test11">
+                        <label for="list4-test11">Логистика</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test12">
+                        <label for="list4-test12">Маркетинг</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test13">
+                        <label for="list-test13">Маркетинг и коммерция</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test14">
+                        <label for="list4-test14">Международные рынки</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test15">
+                        <label for="list4-test15">Менеджмент</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test16">
+                        <label for="list4-test16">Менеджмент и маркетинг в отраслях и сферах</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test17">
+                        <label for="list4-test17">Микро-, макроэкономика</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test18">
+                        <label for="list4-test18">Налоги</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test19">
+                        <label for="list4-test19">Организационное развитие</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test20">
+                        <label for="list4-test20">Производственный маркетинг и менеджмент</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test21">
+                        <label for="list4-test21">Промышленный маркетинг и менеджмент</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test22">
+                        <label for="list4-test22">Процессы и аппараты</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test23">
+                        <label for="list4-test23">Стандартизация</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test24">
+                        <label for="list4-test24">Статистика</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test25">
+                        <label for="list4-test25">Стратегический менеджмент</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test26">
+                        <label for="list4-test26">Страхование</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test27">
+                        <label for="list4-test27">Таможенное дело</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test28">
+                        <label for="list4-test28">Управление персоналом</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test29">
+                        <label for="list4-test29">Финансы</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test30">
+                        <label for="list4-test30">Экономика</label>
+                      </li>
+                      <li class="groupCheckbox">
+                        <input type="checkbox" id="list4-test31">
+                        <label for="list4-test31">Эконометрика</label>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="groupBtn"><a href="../../examples/author-registration-step-4" class="btn btnBrown">ДАЛЕЕ</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="wrappContent footerContent">
+        <div class="leftFooter"><a href="#" class="logo">LEKURS</a></div>
+        <div class="middleFooter">
+          <div class="phone"><i class="icon icon-mobile"></i><span>БЕСПЛАТНЫЙ ЗВОНОК</span><span>8 (812) 987 12 07</span></div>
+          <ul class="menuFooter">
+            <li> УСЛУГИ</li>
+            <li><a href="#">Курсовые работы</a></li>
+            <li><a href="#">Диплом</a></li>
+            <li><a href="#">Контрольные работы</a></li>
+            <li><a href="#">Рефераты</a></li>
+            <li><a href="#">Эссе</a></li>
+            <li><a href="#">Рецензии</a></li>
+            <li><a href="#">Другие виды работ</a></li>
+            <li><a href="#">Готовые работы</a></li>
+          </ul>
+        </div>
+        <div class="rightFooter">
+          <ul class="menuFoote">
+            <li class="title">ЗАКАЗАТЬ РАБОТУ</li>
+            <li>О НАС</li>
+            <li><a href="#">Цены и акции</a></li>
+            <li><a href="#">Условия работы</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li>СОТРУДНИЧЕСТВО</li>
+            <li><a href="#">Партнерам</a></li>
+            <li><a href="#">Стать автором</a></li>
+            <li><a href="#">Вебмастерам</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrappContent">
+        <div class="copyright">
+          <div class="wrappCpr">
+            <p>@All rights reserved</p>
+            <p>2016</p>
+            <p>Like us</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../../lib/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

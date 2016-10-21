@@ -1,0 +1,108 @@
+extends ../../layouts/index.jade
+
+block head-title
+    | - партнерам
+
+block styles
+    link(href="style.css", rel="stylesheet")
+    link(href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+
+block scripts
+    script(src='main.js')
+
+block content
+    .container.page-partners
+      .wrappContentSidbar
+        .content
+          h1 ПАРТНЕРАМ
+          .description
+            p Текст о том, что мы готовы к сотрудниечествуТекст о том, что мы готовы к сотрудниечествуТекст о том, что мы готовы к сотрудниечествуТекст о том, что мы готовы к сотрудниечествуТекст о том, что мы готовы к сотрудниечеству
+
+            p Зазывающий текст выделен жирным шрифтомЗазывающий текст выделен жирным шрифтомЗазывающий текст выделен жирным шрифтом!
+          .partnersGroup
+            .partnersGroupItem
+              .imgWrapp.orangeBack
+                i.icon.icon-three-man
+              h4 АГЕНТСТВАМ
+              p Зазывающий теккст для агенств Зазывающий теккст для агенств Зазывающий теккст для агенств
+              a.linkOrange.link(href="#") ПОДРРОБНЕЕ
+              a.btn.btnOrange СТАТЬ ПАРТНЕРОМ
+              form.formBecomePartner
+                h5 СТАТЬ ПАРТНЕРОМ
+                .wrappForm
+                  .gropInput
+                    label Имя*
+                    input(type="text" placeholder="Ваше имя")
+                  .gropInput
+                    label Фамилия*
+                    input(type="text" placeholder="Ваша фамилия")
+                  .gropInput
+                    label Телефон*
+                    input.phoneValidation(type="tel" placeholder="+7 *** *** ****")
+                  .gropInput
+                    label e-mail*
+                    input(type="text" placeholder="Ваш email")
+                  input.blackSubmit(type="submit" value="ОТПРАВИТЬ ЗАЯВКУ")
+
+            .partnersGroupItem.green
+              .imgWrapp.greenBack
+                i.icon.icon-white-hat
+              h4 СТУДЕНТАМ
+              p Зазывающий теккст для агенств Зазывающий теккст для агенств Зазывающий теккст для агенств
+              a.linkGreen.link(href="#") ПОДРРОБНЕЕ
+              .btn.btnGreen СТАТЬ ПАРТНЕРОМ
+              form.formBecomePartner
+                h5 СТАТЬ ПАРТНЕРОМ
+                .wrappForm
+                  .gropInput
+                    label Имя*
+                    input(type="text" placeholder="Ваше имя")
+                  .gropInput
+                    label Фамилия*
+                    input(type="text" placeholder="Ваша фамилия")
+                  .gropInput
+                    label Телефон*
+                    input.phoneValidation(type="tel" placeholder="+7 *** *** ****")
+                  .gropInput
+                    label e-mail*
+                    input(type="text" placeholder="Ваш email")
+                  input.blackSubmit(type="submit" value="ОТПРАВИТЬ ЗАЯВКУ")
+
+        .rightSibar
+          .infoContact
+            h2 ОТДЕЛ ПО РАБОТЕ С ПАРТНЕРАМИ
+            p По вопросам сотрудничества обращайтесь в отдел по работе с партнерами компании “Лекурс”
+            .infoContact-item
+              .phone
+                i.icon.icon-mobile-black
+                .text
+                  span БЕСПЛАТНЫЙ ЗВОНОК
+                  span 8 (812) 987 12 07
+            a.email(href="mailto:partnerspartners@gmail.com") partnerspartners@gmail.com
+
+      .wrappContentSidbar
+        .whyContent
+          h3 ПОЧЕМУ С НАМИ УДОБНО, НАДЕЖНО И ВЫГОДНО?
+          p Здесь текст о том почему с нами удобно, надежно и выгодно Здесь текст о том почему с нами удобно, надежно и выгодно Здесь текст о том почему с нами удобно, надежно и выгодно Здесь текст о том почему с нами удобно, надежно и выгодно Здесь текст о том почему с нами удобно, надежно и выгодно Здесь текст о том почему с нами удобно, надежно и выгодно Здесь текст о том почему с нами удобно, надежно и выгодно Здесь текст о том почему с нами удобно, надежно и выгодно Здесь текст о том почему с нами удобно, надежно и выгодно Здесь текст о том почему с нами удобно, надежно и выгодно
+        h2 ОСТАЛИСЬ ВОПРОСЫ? ОСТАВЬТЕ ЗАЯВКУ И МЫ ВАМ ПЕРЕЗВОНИМ!
+        form.formPartners
+          .gropInput
+            label Ваше имя
+            input(type="text" placeholder="Ваше имя")
+          .gropInput
+            label Телефон
+            input.phoneValidation(type="tel" placeholder="+7 *** *** ****")
+          .gropInput
+            label Время звонка
+            .select
+              span.default-value Любое время
+              ul
+                li 10:00 - 11:00
+                li 11:00 - 12:00
+                li 12:00 - 13:00
+                li 13:00 - 14:00
+                li 14:00 - 15:00
+                li 15:00 - 16:00
+                li 16:00 - 17:00
+                li 17:00 - 18:00
+                li 18:00 - 19:00

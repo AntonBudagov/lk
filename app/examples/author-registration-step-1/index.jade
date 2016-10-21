@@ -1,0 +1,57 @@
+extends ../../layouts/index.jade
+
+block head-title
+    | - регистрация автора
+
+block styles
+    link(href="style.css", rel="stylesheet")
+    link(href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+
+block scripts
+    script(src='main.js')
+
+block content
+    .container.page-authors-register
+      .wrappContent
+        //- .formStepRegister
+          .formStepRegister-item
+            .top 1
+            .bottom Начало регистрации
+          .formStepRegister-item
+            .top 2
+            .bottom Сведения о вас
+          .formStepRegister-item
+            .top 3
+            .bottom Выбор профиля
+          .formStepRegister-item
+            .top 4
+            .bottom Окончание регистрации
+          .lineProgress
+            .dot.active
+            .dot
+            .dot
+            .dot
+        .step1
+          .formStepRegister
+            .formStepRegister-item
+              .top 1
+              .bottom Начало регистрации
+            .formStepRegister-item
+              .top 2
+              .bottom Сведения о вас
+            .formStepRegister-item
+              .top 3
+              .bottom Выбор профиля
+            .formStepRegister-item
+              .top 4
+              .bottom Окончание регистрации
+            .lineProgress
+              .dot.active
+              .dot
+              .dot
+              .dot
+          .formStepRegisterProgress
+            .info
+              p Введите Ваш почтовый адрес для регистрации. В дальнейшем он будет являться Вашим логином для входа на сайт.
+              input(type="email" name='email' placeholder="EMAIL")
+              a.next(href="../../examples/author-registration-step-2") ДАЛЕЕ →

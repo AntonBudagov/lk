@@ -11,7 +11,7 @@ block scripts
 
 block content
   .container.page-guarantee
-    .wrappContent
+    .wrappContentSidbar
       .content
         h1 УСЛОВИЯ ГАРАНТИИ
         p текст о том что у нас есть условия и гарантии текст о том что у нас есть условия и гарантиитекст о том что у нас есть условия и гарантиитекст о том что у нас есть условия и гарантиитекст о том что у нас есть условия и гарантиитекст о том что у нас есть условия и гарантиитекст о том что у нас есть условия и гарантии
@@ -27,8 +27,9 @@ block content
         h2 ГАРАНТИИ СОТРУДНИЧЕСТВА
         p текст о гарантиях текст о гарантиях текст о гарантиях текст о гарантиях текст о гарантиях текст о гарантиях текст о гарантиях текст о гарантиях текст о гарантиях текст о гарантиях текст о гарантиях текст о гарантиях текст о гарантиях текст о гарантиях
       .rightSibar
-        form.form
+        form.form.formOneClick
           .leter
+            i.icon.icon-doc
             .leterWrapp
               span М
               span Ы
@@ -49,7 +50,7 @@ block content
               span М
               span И!
           .title ЗАЯВКА В ОДИН КЛИК
-          input(type="text" placeholder="ВВЕДИТЕ НОМЕР ТЕЛЕФОНА")
+          input.phoneValidation(type="tel" placeholder="+7 *** *** ****")
           .select
             span.default-value ВЫБЕРИТЕ ТИП РАБОТЫ
             ul
@@ -64,6 +65,23 @@ block content
               li Lorem
               li Lorem Ipsum
               li Ipsum
+            input(type="submit" value="ОФОРМИТЬ ЗАЯВКУ").greenSubmit
+
+        .infoContact
+          .infoContact-item
+            i.icon.icon-earth
+          .infoContact-item
+            .phone
+              i.icon.icon-mobile-black
+              .text
+                span БЕСПЛАТНЫЙ ЗВОНОК
+                span 8 (812) 987 12 07
+          .infoContact-item
+            .workTime
+              i.icon.icon-flag
+              .text
+                span Пн-Вс:09:00-24:00
+                span Пн-Вс:09:00-24:00
+
     .wrappContent
-
-
+      +OrderBlock

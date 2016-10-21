@@ -48,21 +48,20 @@
     };
     $('#reviewCarusel').owlCarousel(reviewCarusel);
 
-
     [].slice.call(document.querySelectorAll('#reviewCarusel')).forEach(function(review) {
       var reviewItem = review.querySelectorAll('.owl-item '),
       sets = function(ev) {
-        ev.preventDefault();
+        // ev.preventDefault();
         // content description
         // return if already current
-        if( $(this).hasClass('focusItem') ) {
+        if( $(this).children().hasClass('focusItem') ) {
           return false;
         }
         // remove current
-        $('.owl-item').removeClass('focusItem')
+        $('.owl-item').children().removeClass('focusItem')
 
         // set current
-        $(this).addClass('focusItem');
+        $(this).children().addClass('focusItem');
 
         $(this).parents('.review').find('.description .desc').removeClass('active').eq($(this).index()).addClass('active');
       };

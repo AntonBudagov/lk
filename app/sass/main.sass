@@ -28,7 +28,7 @@ body
   height: auto
   max-width: 100%
   min-width: 1200px
-  background-color: rgba(250, 249, 219, 0.65)
+  background-color: #fff
   overflow-y: auto
   overflow-x: hidden
 
@@ -38,6 +38,7 @@ h1
   font-size: 35px
   font-weight: 700
   color: #1e1e1c
+  text-transform: uppercase
 
 h2
   font-size: 18px
@@ -50,6 +51,8 @@ h4
   font-size: 12px
   font-weight: 700
   text-transform: uppercase
+  color: $defaultColor
+  line-height: 16px
 
 p
   font-size: 15px
@@ -112,7 +115,123 @@ input:-ms-input-placeholder
   // line-height: 50px
   font-weight: 400
 
+/* Radio Buttons
+   ========================================================================== */
+// [type="checkbox"]
+//   width: 18px
+//   height: 18px
+//   margin: 0
+//   padding: 0
+/* Radio Buttons
+   ========================================================================== */
+
+// Remove default Radio Buttons
+[type="radio"]:not(:checked),
+[type="radio"]:checked,
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked
+  position: absolute
+  left: -9999px
+  opacity: 0
+
+
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label,
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label
+  position: relative
+  padding-left: 35px
+  cursor: pointer
+  display: inline-block
+  height: 25px
+  line-height: 25px
+  font-size: 1rem
+  transition: .28s ease
+
+  -khtml-user-select: none /* webkit (konqueror) browsers */
+  user-select: none
+
+
+[type="radio"] + label:before,
+[type="radio"] + label:after,
+[type="checkbox"] + label:before,
+[type="checkbox"] + label:after
+  content: ''
+  position: absolute
+  left: 0
+  top: 0
+  margin: 4px
+  width: 18px
+  height: 18px
+  z-index: 0
+  transition: .28s ease
+
+
+/* Unchecked styles */
+[type="radio"]:not(:checked) + label:before,
+[type="radio"]:not(:checked) + label:after,
+[type="radio"]:checked + label:before,
+[type="radio"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:checked + label:after
+
+  border-radius: 50%
+
+
+[type="radio"]:not(:checked) + label:before,
+[type="radio"]:not(:checked) + label:after,
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:not(:checked) + label:after
+  border: 1px solid #dedad6
+
+
+[type="radio"]:not(:checked) + label:after,
+[type="checkbox"]:not(:checked) + label:after
+  z-index: -1
+  transform: scale(0)
+
+
+/* Checked styles */
+[type="radio"]:checked + label:before
+[type="checkbox"]:checked + label:before
+  border: 1px solid transparent
+
+
+[type="radio"]:checked + label:after,
+[type="radio"]:checked + label:before,
+[type="radio"]:checked + label:after,
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:checked + label:after
+  border: 1px solid #bcb8b2
+
+
+[type="radio"]:checked + label:after,
+[type="radio"]:checked + label:after,
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:checked + label:after
+  background-color: #bcb8b2
+  z-index: 0
+
+
+[type="radio"]:checked + label:after,
+[type="checkbox"]:checked + label:after
+  transform: scale(.5)
+
 .container
+  padding-bottom: 25px
+
+.groupCheckbox
+  span
+    font-size: 15px
+    font-weight: 400
+    color: #262422
+    display: block
+    &:last-child
+      color: #bcb8b2
+
 
 .logo
   display: inline-block
@@ -121,16 +240,214 @@ input:-ms-input-placeholder
   font-family: $defaultFontBold
   font-size: 46px
   font-weight: 700
+  color: #262423
 
 .wrappContent
   margin: 0 auto
   max-width: 1200px
+
+.wrappContentSidbar
+  margin: 0 auto
+  width: 1061px
+  padding: 20px 0
+  &:before, &:after
+    content: ''
+    display: table
+    line-height: 0
+    clear: both
+
+// Content Sidbar
+.content, .rightSibar
+    padding-top: 30px
+.content
+  width: 70%
+  width: 651px
+  float: left
+  p
+    margin-top: 26px
+  h2
+    font-size: 15px
+    margin-top: 36px
+
+.rightSibar
+  float: right
+  width: 30%
+  max-width: 315px
+
+// Content Sidbar
+
+.fourPlus
+  text-align: justify
+  max-width: 904px
+  width: 100%
+  margin: 85px auto 0
+  text-transform: uppercase
+  display: block
+  &-item
+    text-align: center
+    display: inline-block
+    vertical-align: top
+    width: 200px
+    margin-right: 20px
+    text-decoration: none
+    &:first-child
+      width: 109px
+      margin-right: 115px
+    &:nth-child(2)
+      width: 200px
+      margin-right: 97px
+    &:nth-child(3)
+      width: 150px
+      margin-right: 90px
+      h4
+        max-width: 150px
+    &:nth-child(4)
+      width: 140px
+      margin-right: 0
+    h4
+      margin: 17px auto 0
+      max-width: 150px
+
+.fourCircle
+  text-align: justify
+  max-width: 904px
+  width: 100%
+  margin: 85px auto
+  text-transform: uppercase
+  display: block
+  position: relative
+  font-size: 0
+  &:before
+    content: ''
+    width: 797px
+    height: 1px
+    position: absolute
+    z-index: 1
+    background-color: #222
+    top: 35px
+    left: 20px
+  .fourCircleContent
+      &-item
+        margin-right: 134px
+        width: 200px
+        text-align: center
+        display: inline-block
+        position: relative
+        vertical-align: top
+
+        &:first-child
+          width: 109px
+          margin-right: 115px
+          .step
+            border: solid 2px #eac460
+        &:nth-child(2)
+          width: 200px
+          margin-right: 97px
+          .step
+            border: solid 2px #eb9c80
+        &:nth-child(3)
+          width: 150px
+          margin-right: 90px
+          .step
+            border: solid 2px #2f929f
+        &:last-child
+          width: 140px
+          .step
+            border: solid 2px #8ebf89
+        .step
+          font-size: 30px
+          font-weight: 400
+          width: 69px
+          height: 69px
+          border-radius: 50%
+          margin: 0 auto
+          position: relative
+          background-color: #fff
+          z-index: 3
+          span
+            position: absolute
+            top: 0
+            bottom: 0
+            margin: auto
+            left: 0
+            right: 0
+            width: 100%
+            display: table
+            vertical-align: middle
+        h4
+          font-size: 12px
+          font-weight: 400
+          margin-top: 15px
+        &:last-child
+          margin-right: 0
+
+.orderBlocks
+  text-align: center
+  width: 100%
+  max-width: 902px
+  margin: 70px auto 0
+  position: relative
+  z-index: 1
+  font-size: 0
+  &:after
+    content: ''
+    position: absolute
+    display: table
+    left: 8px
+    right: 0
+    margin: auto
+    top: -3px
+    z-index: 2
+    +sprite($back-section4)
+
+  .orderItem
+    display: inline-block
+    width: 250px
+    height: 155px
+    border: solid 1px #bcb8b2
+    padding: 20px 30px
+    position: relative
+    margin-right: 75px
+    .icon
+      position: absolute
+      top: -36px
+      left: 0
+      right: 0
+      z-index: 3
+    &:last-child
+      margin-right: 0
+    h4
+      font-size: 15px
+      margin-bottom: 15px
+    p
+      font-size: 12px
+      font-weight: 300
+      line-height: 16px
+      display: block
+      height: 48px
+      overflow: hidden
+      margin-bottom: 20px
+
+.wrappOrderBlock
+  background: #eaeaea
+  text-align: center
+  .orderBlocks
+    padding: 40px 0 92px
+    display: inline-block
+    &:after
+      display: none
+      top: 38px
 
 svg
   display: inline-block
   width: 2rem
   height: 2rem
   overflow: visible
+
+.orangeBack
+  background-color: #eb9c80
+.greenBack
+  background-color: #96c388
 
 .icon
   position: relative
@@ -142,7 +459,6 @@ svg
     left: 0
     content: ''
 
-
 @import _header
 
 @import _footer
@@ -153,5 +469,6 @@ svg
 
 @import _form
 
+@import _rightSibar
 
-// @import _sectionOne
+@import _modal

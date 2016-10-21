@@ -1,0 +1,430 @@
+extends ../../layouts/index.jade
+
+block head-title
+    | - регистрация автора
+
+block styles
+    link(href="style.css", rel="stylesheet")
+    link(href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+
+block scripts
+    script(src='main.js')
+
+block content
+    .container.page-authors-register
+      .wrappContent
+        .step3
+          .formStepRegister
+            .formStepRegister-item
+              .top 1
+              .bottom Начало регистрации
+            .formStepRegister-item
+              .top 2
+              .bottom Сведения о вас
+            .formStepRegister-item
+              .top 3
+              .bottom Выбор профиля
+            .formStepRegister-item
+              .top 4
+              .bottom Окончание регистрации
+            .lineProgress
+              .dot.active
+              .dot.active
+              .dot.active
+              .dot
+          .formStepRegisterProgress
+            .work
+              h2 Работа
+              .leftFormContent
+                .locationWork
+                  .groupInput
+                    label Место работы
+                      span.required=" *"
+                    input(type="text" placeholder="Место работы")
+                  .groupInput
+                    label Должность
+                      span.required=" *"
+                    input(type="text" placeholder="Должность")
+                .addLocationWork.addInfo + добавить еще место работы
+              .rightFormContent
+                  .groupInput
+                    label Опыт работы
+                      span.required=" *"
+                    input(type="text" placeholder="Опыт работы")
+
+            hr
+            .education
+              h2 Образование
+              .educations
+                .educationWrapp
+                  .leftFormContent
+                    .educationList
+                      .groupInput
+                        label ВУЗ
+                          span.required=" *"
+                        input(type="text" placeholder="ВУЗ")
+                      .groupInput
+                        label Факультет
+                          span.required=" *"
+                        input(type="text" placeholder="Факультет")
+
+                  .rightFormContent
+                    .groupInput
+                      label Специальность
+                        span.required=" *"
+                      input(type="text" placeholder="Специальность")
+
+              .addLocationEducation.addInfo + добавить еще образование
+
+            hr
+
+            .fileUpload.upladDoc.addInfo
+              span + Приекрепить документы об образовании
+              input.upload(type='file')
+
+
+            //- hr
+
+            .selections
+              h2 Сотрудничество с нами вы рассматриваете как*
+              .groupRadio
+                input(name="group1" type="radio" id="group1-test1" checked)
+                label(for="group1-test1") Основной источник дохода
+              .groupRadio
+                input(name="group1" type="radio" id="group1-test2")
+                label(for="group1-test2") Дополнительный
+              .groupRadio
+                input(name="group1" type="radio" id="group1-test3")
+                label(for="group1-test3") Эпизодический заработок
+
+            .selections
+              h2 Сколько времени вы хотите уделять работе?*
+              .groupRadio
+                input(name="group2" type="radio" id="group2-test1" checked)
+                label(for="group2-test1") несколько часов в неделю
+              .groupRadio
+                input(name="group2" type="radio" id="group2-test2")
+                label(for="group2-test2") менее 2 часов в день
+              .groupRadio
+                input(name="group2" type="radio" id="group2-test3")
+                label(for="group2-test3") от 3 до 6 часов в день
+               .groupRadio
+                  input(name="group2" type="radio" id="group2-test4")
+                  label(for="group2-test4") более 6 часов в день
+
+            .selections
+              h2 Какой опыт написания работ в этой сфере?
+              .groupRadio
+                input(name="group3" type="radio" id="group3-test1" checked)
+                label(for="group3-test1") Ранее не писал(а)
+              .groupRadio
+                input(name="group3" type="radio" id="group3-test2")
+                label(for="group3-test2") Менее 1 года
+              .groupRadio
+                input(name="group3" type="radio" id="group3-test3")
+                label(for="group3-test3") От 1 до 3 лет
+               .groupRadio
+                  input(name="group3" type="radio" id="group3-test4")
+                  label(for="group3-test4") Более 3 лет
+
+            .selections
+              h2 Ваши ожидания дохода в месяц:
+              .groupRadio
+                input(name="group4" type="radio" id="group4-test1" checked)
+                label(for="group4-test1") до 10 тыс. руб.
+              .groupRadio
+                input(name="group4" type="radio" id="group4-test2")
+                label(for="group4-test2") от 10 до 25 тыс.руб.
+              .groupRadio
+                input(name="group4" type="radio" id="group4-test3")
+                label(for="group4-test3") от 25 до 55 тыс. руб.
+               .groupRadio
+                  input(name="group4" type="radio" id="group4-test4")
+                  label(for="group4-test4") от 55 тыс. руб.
+
+            .selections
+              h2 Работы какой  сложности вы готовы выполнять*
+              .groupRadio
+                input(name="group5" type="radio" id="group5-test1" checked)
+                label(for="group5-test1") Предпочтительнее научные (диссертации, статьи, исследования)
+              .groupRadio
+                input(name="group5" type="radio" id="group5-test2")
+                label(for="group5-test2") Предпочтительнее сложные (дипломы, курсовые и т.п.)
+              .groupRadio
+                input(name="group5" type="radio" id="group5-test3")
+                label(for="group5-test3") Предпочтительнее только простые (рефераты, контрольные, эссе)
+               .groupRadio
+                  input(name="group5" type="radio" id="group5-test4")
+                  label(for="group5-test4") Сложность не имеет значения, любые
+
+            //- .selections
+            //-   h2 Сотрудничество с нами вы рассматриваете как*
+            .selections
+              h2 Выберите предметы, по которым вы готовы выполнять работы*
+              .groupList.checkBoxCounter
+                .count
+                  span Сейчас выбрано:
+                  span#count=" 0"
+                ul
+                  //- Гуманитарное:
+                  li
+                    .title Гуманитарное:
+                    span +
+                    ul.panel
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test1")
+                        label(for="list-test1") Дизайн
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test2")
+                        label(for="list-test2") Журналистика
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test3")
+                        label(for="list-test3") Искусство
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test4")
+                        label(for="list-test4") История
+
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test5")
+                        label(for="list-test5") Культура
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test6")
+                        label(for="list-test6") Литература
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test7")
+                        label(for="list-test7") Международные отношения
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test8")
+                        label(for="list-test8") Педагогика
+
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test9")
+                        label(for="list-test9") Политология
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test10")
+                        label(for="list-test10") Психология
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test11")
+                        label(for="list-test11") Право
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test12")
+                        label(for="list-test12") Реклама и PR
+
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test13")
+                        label(for="list-test13") СКД
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test14")
+                        label(for="list-test14") Социология
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test15")
+                        label(for="list-test15") Страноведение
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test16")
+                        label(for="list-test16") Туризм
+
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test17")
+                        label(for="list-test17") Философия
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test18")
+                        label(for="list-test18") Языкознание
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test19")
+                        label(for="list-test19") Языки (переводы)
+
+                  li
+                    .title Естественное:
+                    span +
+                    ul.panel
+                      li.groupCheckbox
+                        input(type="checkbox" id="list2-test1")
+                        label(for="list2-test1") Астрономия
+                      li.groupCheckbox
+                        input(type="checkbox" id="list2-test2")
+                        label(for="list2-test2") Археология
+                      li.groupCheckbox
+                        input(type="checkbox" id="list2-test3")
+                        label(for="list2-test3") Биология
+                      li.groupCheckbox
+                        input(type="checkbox" id="list2-test4")
+                        label(for="list2-test4") География
+
+                      li.groupCheckbox
+                        input(type="checkbox" id="list2-test5")
+                        label(for="list2-test5") Геология
+                      li.groupCheckbox
+                        input(type="checkbox" id="list2-test6")
+                        label(for="list2-test6") Естествознание
+                      li.groupCheckbox
+                        input(type="checkbox" id="list2-test7")
+                        label(for="list2-test7") Медицина
+                      li.groupCheckbox
+                        input(type="checkbox" id="list2-test8")
+                        label(for="list2-test8") Химия
+                      li.groupCheckbox
+                        input(type="checkbox" id="list2-test9")
+                        label(for="list2-test9") Экология
+
+                  li
+                    .title Техническое:
+                    span +
+                    ul.panel
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test1")
+                        label(for="list3-test1") Высшая математика
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test2")
+                        label(for="list3-test2") Материаловедение
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test3")
+                        label(for="list3-test3") Машиностроение
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test4")
+                        label(for="list3-test4") Издательское дело
+
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test5")
+                        label(for="list3-test5") Информатика
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test6")
+                        label(for="list3-test6") Механика
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test7")
+                        label(for="list3-test7") Полиграфия
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test8")
+                        label(for="list3-test8") Программирование
+
+
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test9")
+                        label(for="list3-test9") Процессы и аппараты
+                      li.groupCheckbox
+                        input(type="checkbox" id="list-test10")
+                        label(for="list3-test10") Сопротивление материалов
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test11")
+                        label(for="list3-test11") Строительство
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test12")
+                        label(for="list3-test12") Теория машин и механизмов
+
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test13")
+                        label(for="list3-test13") Транспорт
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test14")
+                        label(for="list3-test14") Физика
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test15")
+                        label(for="list3-test15") Чертежи
+                      li.groupCheckbox
+                        input(type="checkbox" id="list3-test16")
+                        label(for="list3-test16") Электроника, электротехника
+                  //- Экономическое:
+                  li
+                    .title Экономическое:
+                    span +
+                    ul.panel
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test1")
+                        label(for="list4-test1") Антикризисное управление
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test2")
+                        label(for="list4-test2") Банковское дело
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test3")
+                        label(for="list4-test3") Бизнес планирование
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test4")
+                        label(for="list4-test4") Бухучет и аудит
+
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test5")
+                        label(for="list4-test5") Внешнеэкономическая деятельность
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test6")
+                        label(for="list4-test6") ВЭД
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test7")
+                        label(for="list4-test7") Деньги
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test8")
+                        label(for="list4-test8") Государственное и муниципальное управление
+
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test9")
+                        label(for="list4-test9") Деловой этикет
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test10")
+                        label(for="list4-test10") Кредит
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test11")
+                        label(for="list4-test11") Логистика
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test12")
+                        label(for="list4-test12") Маркетинг
+
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test13")
+                        label(for="list-test13") Маркетинг и коммерция
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test14")
+                        label(for="list4-test14") Международные рынки
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test15")
+                        label(for="list4-test15") Менеджмент
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test16")
+                        label(for="list4-test16") Менеджмент и маркетинг в отраслях и сферах
+
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test17")
+                        label(for="list4-test17") Микро-, макроэкономика
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test18")
+                        label(for="list4-test18") Налоги
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test19")
+                        label(for="list4-test19") Организационное развитие
+
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test20")
+                        label(for="list4-test20") Производственный маркетинг и менеджмент
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test21")
+                        label(for="list4-test21") Промышленный маркетинг и менеджмент
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test22")
+                        label(for="list4-test22") Процессы и аппараты
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test23")
+                        label(for="list4-test23") Стандартизация
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test24")
+                        label(for="list4-test24") Статистика
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test25")
+                        label(for="list4-test25") Стратегический менеджмент
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test26")
+                        label(for="list4-test26") Страхование
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test27")
+                        label(for="list4-test27") Таможенное дело
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test28")
+                        label(for="list4-test28") Управление персоналом
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test29")
+                        label(for="list4-test29") Финансы
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test30")
+                        label(for="list4-test30") Экономика
+                      li.groupCheckbox
+                        input(type="checkbox" id="list4-test31")
+                        label(for="list4-test31") Эконометрика
+              hr
+              .groupBtn
+                a.btn.btnBrown(href="../../examples/author-registration-step-4") ДАЛЕЕ

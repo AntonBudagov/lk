@@ -1,0 +1,163 @@
+extends ../../layouts/index.jade
+
+block head-title
+    | - О КОМПАНИИ
+
+block styles
+    link(href="../../lib/owl.carousel/dist/assets/owl.carousel.min.css", rel="stylesheet")
+    link(href="style.css", rel="stylesheet")
+
+block scripts
+    script(src='../../lib/owl.carousel/dist/owl.carousel.min.js')
+    script(src='main.js')
+
+block content
+    .container.page-priceStock
+      .wrappContentSidbar
+        h1 ЦЕНЫ И АКЦИИ
+        .listWorks
+          .groupList
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test1")
+              label(for="group-test1")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test2")
+              label(for="group-test2")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test3")
+              label(for="group-test3")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test4")
+              label(for="group-test4")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test5")
+              label(for="group-test5")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test6")
+              label(for="group-test6")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test7")
+              label(for="group-test7")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test8")
+              label(for="group-test8")
+                span Lorem Ipsum
+                span.price от 000 руб
+          .groupList
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test9")
+              label(for="group-test9")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test10")
+              label(for="group-test10")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test11")
+              label(for="group-test11")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test12")
+              label(for="group-test12")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test13")
+              label(for="group-test13")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test14")
+              label(for="group-test14")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test15")
+              label(for="group-test15")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test16")
+              label(for="group-test16")
+                span Lorem Ipsum
+                span.price от 000 руб
+          .groupList
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test17")
+              label(for="group-test17")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test18")
+              label(for="group-test18")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test19")
+              label(for="group-test19")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test20")
+              label(for="group-test20")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test1")
+              label(for="group-test1")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test21")
+              label(for="group-test21")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test22")
+              label(for="group-test22")
+                span Lorem Ipsum
+                span.price от 000 руб
+            .groupCheckbox
+              input(name="group" type="checkbox" id="group-test23")
+              label(for="group-test23")
+                span Lorem Ipsum
+                span.price от 000 руб
+
+          a(href="").blackBtn.btn ЗАКАЗАТЬ РАБОТУ
+
+      .wrappOrderBlock
+        .orderBlocks
+          .orderItem
+            i.icon.icon-cap-blue
+            h4 СТУДЕНТАМ
+            p Оригинальные работы высокого качества, выполненные точно в срок
+            a.btn.btnBlue(href="") ГАРАНТИИ
+          .orderItem
+            i.icon.icon-le-men
+            h4 АВТОРАМ
+            p Достойная оплата за ваш труд, своевременные выплаты, гибкий график работы
+            a.btn.btnOrange(href="") ВАКАНСИИ
+          .orderItem
+            i.icon.icon-le-two-men
+            h4 ПАРТНЕРАМ
+            p Привлекательные условия сотрудничества для студентов и организаций
+            a.btn.btnGreen(href="#") УСЛОВИЯ
+      +Paymonts
+

@@ -1,0 +1,89 @@
+extends ../../layouts/index.jade
+
+block head-title
+    | - authors
+
+block styles
+    link(href="style.css", rel="stylesheet")
+    link(href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+
+block scripts
+    script(src='main.js')
+
+block content
+    .container.page-authors
+      .wrappContent
+        .content
+          h1 АВТОРАМ
+          p Наша компания предлагает талантливым, грамотным, высококлассным авторам совместно сотрудничать в сфере написания студенческих работ. Автором может стать как преподаватель вуза, так и эксперт в своей области. Работая с нами, вы получите:
+          .fourPlusForAuthor
+            .fourPlusForAuthor-item
+              .circle
+                i.icon.icon-dolar
+              h4 ХОРОШИЙ ДОХОД
+              .desc
+                p Займитесь любимым делом, которое достойно оплачивается
+                p (28 000 - 63 000)
+            .fourPlusForAuthor-item
+              .circle
+                i.icon.icon-alarm-clock
+              h4 ГИБКИЙ ГРАФИК
+              .desc
+                p Самостоятельно формируйте свой рабочий день, никаких ограничений
+            .fourPlusForAuthor-item
+              .circle
+                i.icon.icon-notepad
+              h4 ОПЛАТА БЕЗ ЗАДЕРЖЕК
+              .desc
+                p В установленные сроки осуществляется перевод заработанных вами средств. Без опозданий. Всегда.
+            .fourPlusForAuthor-item
+              .circle
+                i.icon.icon-house
+              h4 РАБОТА В УЮТНОЙ АТМОСФЕРЕ
+              .desc
+                p Пишите работы в приятной для себя обстановке: дома, в кафе или библиотеке
+          .groupMan
+            i.icon.icon-man-black
+            i.icon.icon-man-black
+            i.icon.icon-man-black
+          a.btn.btnBrown(href="#") СТАТЬ АВТОРОМ
+
+        .rightSibar
+          .infoContact
+            .infoContact-item
+              i.icon.icon-earth
+            .infoContact-item
+              .phone
+                i.icon.icon-mobile-black
+                .text
+                  span БЕСПЛАТНЫЙ ЗВОНОК
+                  span 8 800 000 00 00
+            .infoContact-item
+              .email
+                i.icon.icon-email
+                .text
+                  span КОНТАКТНЫЙ EMAIL
+                  span hrxxx@yyy.com
+          .infoContact
+
+            .fixedPrice
+              i.icon.icon-man-orange
+              h2 ТРЕБУЮТСЯ АВТОРЫ
+              .fixedPrice-item
+                h3 По написанию таких работ
+                p от 10 000 руб. до 100 000 руб.
+              .fixedPrice-item
+                h3 По написанию таких работ
+                p от 10 000 руб. до 100 000 руб.
+              .fixedPrice-item
+                h3 По написанию таких работ
+                p от 10 000 руб. до 100 000 руб.
+              .fixedPrice-item
+                h3 По написанию таких работ
+                p от 10 000 руб. до 100 000 руб.
+              .fixedPrice-item
+                h3 По написанию таких работ
+                p от 10 000 руб. до 100 000 руб.
+            a(href="#").btn.btnOrangeB ВСЕ ВАКАНСИИ
+
+

@@ -17,6 +17,9 @@
   ],
   "dependencies": {
     "jquery": "^2.2.4",
-    "owl.carousel": "2.1.6"
+    "owl.carousel": "2.1.6",
+    "jquery.maskedinput": "^1.4.1",
+    "materialize": "^0.97.7",
+    "air-datepicker": "^2.2.3"
   }
 }
