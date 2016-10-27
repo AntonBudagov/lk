@@ -1,3 +1,4 @@
+@import ./app/sass/_include
 .form
   border: solid 2px #96c388
   border-radius: 2px
@@ -44,6 +45,18 @@
   .required
     color: #eaaa7f
 
+.formBecomePartner, .formPartners
+  input::-webkit-input-placeholder
+    font-size: 15px
+  input::-moz-placeholder
+    font-size: 15px
+  input:-moz-placeholder
+    font-size: 15px
+  input:-ms-input-placeholder
+    font-size: 15px
+
+
+
 .formOneClick
   width: 318px
   height: 283px
@@ -64,21 +77,32 @@
       font-size: 9px
 
 .formOrderWork
-  padding: 21px 0 0 32px
-  width: 1068px
-  height: 417px
-  border: solid 2px #00899f
+  padding: 17px 0 0 0;
+  width: 1068px;
+  height: 414px;
+  border: solid 2px #00899f;
+  .title
+    margin-bottom: 48px
+    padding-right: 0
   .formContent
-      width: 100%
-
+    width: 100%
+    .leftFormContent
+      &:nth-child(1),  &:nth-child(4)
+        margin-left: 32px
+  hr
+    border: none
+    background: #d0cdc7
+    width: 100%
+    height: 1px
+    margin-bottom: 22px
   .leftFormContent, .rightFormContent
       width: 425px
       display: inline-block
       vertical-align: top
       font-size: 0
   .rightFormContent
-      width: 500px
-      margin-left: 20px
+      width: 430px
+      margin-left: 65px
   .groupInput
       display: inline-block
       width: 100%
@@ -91,17 +115,53 @@
           display: block
           float: left
       .groupInputSubitem
-          width: 50%
+          width: 192px
           display: inline-block
           .select .default-value
             padding: 8px 0 8px 15px
           &:first-child
-              padding-right: 10px
+            padding-right: 0px
+            width: 218px
+          &:last-child
+            float: right
+            .number
+              max-width: 74px
           .number
               max-width: 65px
   .sendBtn
-      margin: 0 auto
+      margin: 50px auto
       display: block
+
+
+  .addInfo
+    margin-left: 115px
+    font-size: 12px
+    font-weight: 300
+    color: #00899f
+    cursor: pointer
+    // margin-bottom: 15px
+    &.addLocationEducation, &.upladDoc
+        margin-left: 105px
+  .upladDoc
+    padding-bottom: 0px
+
+
+  .fileUpload
+    position: relative
+    cursor: pointer
+    display: inline-block
+  .upload
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    display: block;
+    height: 20px
 
 // Select
 .select
@@ -122,7 +182,7 @@
     width: 100%
     background: #fff
     border: solid 1px #d0cdc7
-    top: 32px
+    top: 30px
     left: 0
     list-style: none
     padding: 0
@@ -146,7 +206,7 @@
     display: block
     background-color: #fff
     z-index: 1
-    padding: 10px 0 9px 15px
+    padding: 8px 0 8px 15px
     border-radius: 2px
     cursor: pointer
     font-size: 12px
@@ -157,15 +217,22 @@
       right: 11px
       top: 50%
       transform: translateY(-50%)
-      content: '↑'
+      content: '↓'
       z-index: 10
       font-size: 21px
+  &.time
+    ul
+      li
+       border: none
+       padding: 5px 0 5px 14px
+       color: #262422
+
 .is-open
   ul
     display: block
   .default-value
     &:after
-      content: '↓'
+      content: '↑'
 
 // Form Popup
 .modal.modalForm
@@ -189,3 +256,26 @@
     width: 286px
     margin: 15px auto 0
     display: block
+
+  .groupDay
+    width: 100%
+    font-size: 0
+    background-color: #53abaf
+    padding: 5px
+    margin: 15px auto 30px
+    .btnWrapp
+      border-radius: 4px
+    .btn
+      display: inline-block
+      width: 50%
+      background-color: #fff
+      color: #222
+      border-radius: 0
+      &.active
+        background-color: #53abaf
+        color: #fff
+
+.modal.feedBackForm
+  overflow: visible
+  .select
+    margin-bottom: 35px

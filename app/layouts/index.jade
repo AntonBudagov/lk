@@ -1,10 +1,10 @@
 //- Mixin
 mixin fourPlus
     a.fourPlus-item.sectionContent-item.active(href="#")
-        i.icon.icon-le-smart-price
+        i.icon.icon-le-garant
         h4 РАЗУМНЫЕ ЦЕНЫ
     a.fourPlus-item.sectionContent-item(href="#")
-        i.icon.icon-le-garant
+        i.icon.icon-le-smart-price
         h4 Гарантии качества
     a.fourPlus-item.sectionContent-item(href="#")
         i.icon.icon-le-human
@@ -92,7 +92,6 @@ mixin Paymonts
             img(src="../../images/payments/mts.jpg", title="Mts")
         //- .infoPayment  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, optio.
 
-
 mixin OrderBlock
     .orderBlocks
         .orderItem
@@ -111,6 +110,94 @@ mixin OrderBlock
             p Привлекательные условия сотрудничества для студентов и организаций
             a.btn.btnGreen(href="#") УСЛОВИЯ
 
+mixin chepterForm
+    .formContent
+      .leftFormContent
+        .groupInput
+          label Тип работы
+            span.required *
+          .select
+            span.default-value ВЫБЕРИТЕ ТИП РАБОТЫ
+            ul
+              li Бизнес-план
+              li Диаграммы, таблицы
+              li Дипломная работа
+              li Магистерская работа
+              li Доклад
+              li Компьютерный набор текста
+              li Конспекты
+              li Контрольная работа
+              li Курсовая работа
+              li Научно-исследовательская работа
+              li Ответы на билеты
+              li Отчет по практике
+              li Отзыв на диплом
+              li Переводы
+              li Презентация к защите
+              li Реферат
+              li Рецензии
+              li Речь к диплому
+              li Слайды (на базе PowerPoint)
+              li Тезисный план
+              li Часть диплома
+              li Чертежи в специализированных программах
+              li Чертежи от руки
+              li Эссе
+        .groupInput
+          label
+            | Предмет
+            span.required *
+          input(type="text" placeholder="предмет")
+        .fileUpload.upladDoc.addInfo
+          span + Приекрепить документы об образовании
+          input.upload(type='file')
+      .rightFormContent
+
+        .groupInput
+          .groupInputSubitem
+            label
+              | Количество страниц
+              span.required *
+            input.number(type="text" placeholder="60-80")
+          .groupInputSubitem
+            label
+              | Размер шрифта
+              span.required *
+            .select.number
+              span.default-value 14px
+              ul
+                li 16px
+                li 18px
+                li 20px
+        .groupInput
+          label
+            | Тема
+            span.required *
+          input(type="text" placeholder="Ваше имя")
+      hr
+      .leftFormContent
+        .groupInput
+          label
+            | Город
+            span.required *
+          input(type="text" placeholder="Введите город")
+        .groupInput
+          label
+            | Имя
+            span.required *
+          input(type="text" placeholder="Ваше имя")
+
+      .rightFormContent
+        .groupInput
+          label
+            | email
+            span.required *
+          input(type="text" placeholder="email")
+        .groupInput
+          label
+            | Телефон
+            span.required *
+          input.phoneValidation(type="tel" placeholder="+7 *** *** ****")
 doctype html
 html(lang="ru")
   head
@@ -140,8 +227,12 @@ html(lang="ru")
                     .tel 8 (812) 987 12 07
                     //- .tel 8 800 000 00 00
                 .feedbackContainer
-                    a.link(href="#") ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК
-                    a.link(href="#") ЗАКАЗАТЬ РАБОТУ
+                    .linkGroupIcon
+                        i.icon.icon-phone-black-small
+                        a.link.modal-trigger(href="#modal2") ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК
+                    .linkGroupIcon
+                        i.icon.icon-pen
+                        a.link.modal-trigger(href="#modal2") ЗАКАЗАТЬ РАБОТУ
             ul.menu
                 li
                     a(href="../../examples/about/") О КОМПАНИИ
@@ -213,12 +304,44 @@ html(lang="ru")
                     p @All rights reserved
                     p 2016
                     p Like us
+    form.modalForm#modal2.modal.feedBackForm
+        .groupInput
+            label
+              | Телефон
+              span.required=" *"
+            input.phoneValidation(type="tel" placeholder="+7 *** *** ****")
+        .groupInput
+            label
+              | Имя
+              span.required=" *"
+            input(type="text" placeholder="Имя")
+        .groupDay
+            .btn.active Cегодня
+            .btn Завтра
+        .select
+            span.default-value ВЫБЕРИТЕ
+            ul
+              li в любое время
+              li 10:00
+              li 11:00
+              li 12:00
+              li 13:00
+              li 14:00
+              li 15:00
+              li 16:00
+              li 17:00
+              li 18:00
+              li 19:00
 
+
+
+        input.blackSubmit(type="submit" value="Отправить")
 
 
     script(src='../../lib/jquery/dist/jquery.min.js')
     script(src='../../lib/jquery.maskedinput/dist/jquery.maskedinput.min.js')
-
+    script(src='../../lib/materialize/js/velocity.min.js')
+    script(src='../../lib/materialize/js/leanModal.js')
 
     script(src='../../js/main.js')
     //- prodaction

@@ -16,7 +16,10 @@
           <div class="phoneContainer">
             <div class="tel">8 (812) 987 12 07</div>
           </div>
-          <div class="feedbackContainer"><a href="#" class="link">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a><a href="#" class="link">ЗАКАЗАТЬ РАБОТУ</a></div>
+          <div class="feedbackContainer">
+            <div class="linkGroupIcon"><i class="icon icon-phone-black-small"></i><a href="#modal2" class="link modal-trigger">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a></div>
+            <div class="linkGroupIcon"><i class="icon icon-pen"></i><a href="#modal2" class="link modal-trigger">ЗАКАЗАТЬ РАБОТУ</a></div>
+          </div>
         </div>
         <ul class="menu">
           <li><a href="../../examples/about/">О КОМПАНИИ</a></li>
@@ -72,8 +75,40 @@
         </div>
       </div>
     </div>
+    <form id="modal2" class="modalForm modal feedBackForm">
+      <div class="groupInput">
+        <label>Телефон<span class="required"> *</span></label>
+        <input type="tel" placeholder="+7 *** *** ****" class="phoneValidation">
+      </div>
+      <div class="groupInput">
+        <label>Имя<span class="required"> *</span></label>
+        <input type="text" placeholder="Имя">
+      </div>
+      <div class="groupDay">
+        <div class="btn active">Cегодня</div>
+        <div class="btn">Завтра</div>
+      </div>
+      <div class="select"><span class="default-value">ВЫБЕРИТЕ</span>
+        <ul>
+          <li>в любое время</li>
+          <li>10:00</li>
+          <li>11:00</li>
+          <li>12:00</li>
+          <li>13:00</li>
+          <li>14:00</li>
+          <li>15:00</li>
+          <li>16:00</li>
+          <li>17:00</li>
+          <li>18:00</li>
+          <li>19:00</li>
+        </ul>
+      </div>
+      <input type="submit" value="Отправить" class="blackSubmit">
+    </form>
     <script src="../../lib/jquery/dist/jquery.min.js"></script>
     <script src="../../lib/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
+    <script src="../../lib/materialize/js/velocity.min.js"></script>
+    <script src="../../lib/materialize/js/leanModal.js"></script>
     <script src="../../js/main.js"></script>
     <script src="main.js"></script>
   </body>

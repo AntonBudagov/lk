@@ -23,7 +23,7 @@
   .owl-prev
     left: 0
     +sprite($le-prew)
-    // background-image: url(../../images/icons/sprite.png)
+    background-image: url(../images/icons/sprite.png)
     // background-position: -284px -14px
     // width: 10px
     // height: 17px
@@ -36,12 +36,13 @@
     &.disabled
       opacity: .5
   .owl-next
+    +sprite($le-next)
     right: 0
-    // background-image: url(../../images/icons/sprite.png)
+    background-image: url(../images/icons/sprite.png)
     // background-position: -274px -14px
     // width: 10px
     // height: 17px
-    +sprite($le-next)
+
     display: table
     &:before
       content: ''

@@ -1,0 +1,196 @@
+extends ../../layouts/index.jade
+
+block head-title
+    | - ЗАКАЗАТЬ ЭССЕ
+
+block styles
+    //- link(href="style.css", rel="stylesheet")
+
+block scripts
+    script(src='main.js')
+
+block content
+  .container.order-work
+    .wrappContent
+      h1 ЗАКАЗАТЬ ЭССЕ
+      .description
+        p У школьников и студентов часто возникает необходимость заказать эссе. Это письменная работа, которая представляет собой рассуждение, отражающее личное мнение и впечатления автора. Часто сочинение требуется срочно, но времени на него нет, а готовые работы, скачанные из интернета, легко выявляются антиплагиатом. Лучшее решение — недорого купить эссе на нашем сайте. Мы предлагаем уникальные письменные работы на любую тему по привлекательным ценам.
+      form.form.formOrderWork
+        +leterOrder
+        .title ОФОРМИТЬ ЗАКАЗ
+        +chepterForm
+        //- .formContent
+          .leftFormContent
+            .groupInput
+              label Тип работы
+                span.required *
+              .select
+                span.default-value ВЫБЕРИТЕ ТИП РАБОТЫ
+                ul
+                  li Эссе
+                  li Lorem Ipsum Ipsum
+                  li Lorem Ipsum Ipsum
+                  li Lorem Ipsum
+                  li Lorem Ipsum Ipsum Ipsum
+                  li Lorem Ipsum
+                  li Lorem Ipsum
+                  li Lorem Ipsum Ipsum
+                  li Lorem
+                  li Lorem Ipsum
+                  li Ipsum
+            .groupInput
+              label
+                | Предмет
+                span.required *
+              input(type="text" placeholder="предмет")
+            .groupInput
+              label
+                | Город
+                span.required *
+              input(type="text" placeholder="Введите город")
+            .groupInput
+              label
+                | Имя
+                span.required *
+              input(type="text" placeholder="Ваше имя")
+          .rightFormContent
+
+            .groupInput
+              .groupInputSubitem
+                label
+                  | Количество страниц
+                  span.required *
+                input.number(type="text" placeholder="60-80")
+              .groupInputSubitem
+                label
+                  | Размер шрифта
+                  span.required *
+                .select.number
+                  span.default-value 14px
+                  ul
+                    li 16px
+                    li 18px
+                    li 20px
+            .groupInput
+              label
+                | Тема
+                span.required *
+              input(type="text" placeholder="Ваше имя")
+            .groupInput
+              label
+                | email
+                span.required *
+              input(type="text" placeholder="email")
+            .groupInput
+              label
+                | Телефон
+                span.required *
+              input.phoneValidation(type="tel" placeholder="+7 *** *** ****")
+
+        input(type="submit" value="создать заказ").btn.sendBtn
+      .fourPlus
+        //- +fourPlus
+        a.fourPlus-item.sectionContent-item.active(href="#")
+          i.icon.icon-le-smart-price
+          h4 Уникальные работы, проверенные на антиплагиат
+        a.fourPlus-item.sectionContent-item(href="#")
+          i.icon.icon-le-garant
+          h4 Гарантии высокого качества
+        a.fourPlus-item.sectionContent-item(href="#")
+          i.icon.icon-le-human
+          h4 Бесплатные доработки и корректировки
+        a.fourPlus-item.sectionContent-item(href="#")
+          i.icon.icon-le-short-time
+          h4 Короткие сроки
+      .desc
+        p Эссе на заказ, написанное специалистом высокого класса, непременно получит достойную оценку. Узнав, сколько стоит готовая работа, убедитесь, что это выгодный вариант. Не придется тратить много времени на написание или обращаться к непроверенным авторам, ведь здесь
+        p вы можете получить качественную работу и при этом сэкономить.
+      .processWork
+        h2 ЭТАПЫ РАБОТ
+        +fourCircle
+        h2 СТОИМОСТЬ ЭССЕ НА ЗАКАЗ
+        p Схема сотрудничества с заказчиками отработана до мелочей, что позволило снизить стоимость. У нас работают кандидаты и доктора наук, авторы являются действующими преподавателями ведущих вузов. Минимальная цена составляет 490 руб., срок выполнения задания занимает от 2 дней.
+        .decription
+          .leftDesc
+            ul
+              li Из чего формируется цена на эссе и срок его написания?
+              li ― Учебная дисциплина;
+              li ― Тема эссе;
+              li ― Требуемый объем;
+              li ― Особенности содержания
+              li ― Ограничения по срокам;
+              li ― Дополнительные условия.
+
+          .rightDesc
+            .rightDesc-item
+              i.icon.icon-le-smart-price
+              .text
+                span СТОИМОСТЬ ЭССЕ
+                span.price от 490 ₷
+
+            .rightDesc-item
+              i.icon.icon-le-short-time
+              .text
+                span СРОК ВЫПОЛНЕНИЯ
+                span.price от 2 ДНЕЙ
+      .finalWork
+        .finalWorkHead
+          .step
+            span ЗАКЛЮЧАЕМ ДОГОВОР
+            span.arrowNext →
+          .step
+            span ВНОСИТЕ 50% ПРЕДОПЛАТУ
+            span.arrowNext →
+          .step
+            span ПОГАШАЕТЕ ОСТАТОК ПО ГОТОВНОСТИ РАБОТЫ
+
+        .description
+          div
+            h4 КТО ПОМОЖЕТ?
+            p Исполнителем станет автор, специализирующийся на конкретной теме. Не придется переживать за качество выполнения, так как каждое сочинение пишет автор, обладающий научной степенью.
+          div
+            h4 КАК ПОЛУЧИТЬ РАБОТУ?
+            p Оформите заказ на написание любого эссе, чтобы в указанный срок получить готовый текст на электронную почту. Мы предлагаем получение и в распечатанном виде. В этом случае сотрудник может привезти сочинение на указанный адрес.
+          div
+            h4 КАКИЕ ГАРАНТИИ ПРЕДОСТАВЛЯЕМ?
+            p Перед тем как написать эссе, мы заключаем с заказчиком официальный договор. Стоимость письменной работы зависит от размера, сложности и сроков, отведенных на выполнение задания. Договор становится гарантией получения сочинения вовремя.
+          div
+            h4 РЕШИЛИ ОФОРМИТЬ ЗАКАЗ?
+            p Оставить заявку можно на нашем сайте. Заполните форму в онлайн-режиме и обсудите с менеджером детали выполнения задания. Также возможно написать на электронную почту или заказать обратный звонок.
+
+      .fivePlus
+        .list
+          h2 5 ПРИЧИН ЗАКАЗАТЬ ЭССЕ У НАС
+          p
+            span="1. Гарантия качества. "
+            | Вы получите уникальное эссе, полностью раскрывающее заданную тему. Оно без проблем пройдет проверку на уникальность.
+          p
+            span="2. Удобные условия сотрудничества. "
+            | Если по требованию преподавателя понадобятся доработки, они будут выполнены бесплатно.
+          p
+            span="3. Надежность. "
+            | Мы работаем с заказчиками только по официальному договору, компания дорожит репутацией.
+          p
+            span="4. Минимальные сроки. "
+            | Если срочно нужно готовое эссе, позвоните нам или оформите заказ на сайте прямо сейчас.
+          p
+            span="5. Выгодные цены. "
+            | Предлагаем написание эссе любой сложности по отличной стоимости.
+      .mapContent
+        .wrappImg
+          img(src="../../images/elements/world-map.png", alt="")
+        .freeCall
+          h4 БЕСПЛАТНЫЙ ЗВОНОК ПО РОССИИ
+          .phone
+            i.icon.icon-mobile-black
+            span 8 (812) 987 12 07
+          a.btn.blackBtn(href="") ЗАКАЗАТЬ РАБОТУ
+        .infoWork
+          h4 ГРАФИК РАБОТЫ ОФИСА
+          p Пн-Вс:09:00-24:00
+          p Мы работаем по всей России!
+
+
+
+
+

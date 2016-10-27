@@ -4,33 +4,38 @@ html(lang="ru")
     //- base(target="_blank")
     meta(charset="utf-8")
     title Index
-    //- link(href="/css/build.min.css", rel="stylesheet")
+    link(href="css/build.min.css", rel="stylesheet")
 
   body
 
     - var listOfExamples = [];
     - listOfExamples.push({title: 'Main Page', link: './examples/main-page/'})
     - listOfExamples.push({title: 'УСЛОВИЯ ГАРАНТИИ', link: './examples/guarantee/'})
-    - listOfExamples.push({title: 'ЗАКАЗАТЬ РАБОТУ', link: './examples/order-work/'})
+
     - listOfExamples.push({title: 'АВТОРАМ', link: './examples/authors/'})
     - listOfExamples.push({title: 'ТРЕБУЮТСЯ АВТОРЫ', link: './examples/authors-needed/'})
-
 
     - listOfExamples.push({title: 'РЕГИСТРАЦИЯ АВТОРА I', link: './examples/author-registration-step-1/'})
     - listOfExamples.push({title: 'РЕГИСТРАЦИЯ АВТОРА II', link: './examples/author-registration-step-2/'})
     - listOfExamples.push({title: 'РЕГИСТРАЦИЯ АВТОРА III', link: './examples/author-registration-step-3/'})
     - listOfExamples.push({title: 'РЕГИСТРАЦИЯ АВТОРА IV', link: './examples/author-registration-step-4/'})
 
-
     - listOfExamples.push({title: 'НАШИ КОНТАКТЫ', link: './examples/contacts/'})
     - listOfExamples.push({title: 'О КОМПАНИИ', link: './examples/about/'})
 
+    - listOfExamples.push({title: '- ЗАКАЗАТЬ ДИПЛОМНУЮ РАБОТУ', link: './examples/order-work/'})
+    - listOfExamples.push({title: '- ЗАКАЗАТЬ КУРСОВУЮ РАБОТУ ', link: './examples/order-work-1/'})
+    - listOfExamples.push({title: '- ЗАКАЗАТЬ КОНТРОЛЬНУЮ РАБОТУ  ', link: './examples/order-work-9/'})
+    - listOfExamples.push({title: '- ЗАКАЗАТЬ РЕФЕРАТ ', link: './examples/order-work-2/'})
+    - listOfExamples.push({title: '- ЗАКАЗАТЬ ДОКЛАД ', link: './examples/order-work-3/'})
+    - listOfExamples.push({title: '- ЗАКАЗАТЬ МАГИСТЕРСКУЮ ДИССЕРТАЦИЮ ', link: './examples/order-work-4/'})
+    - listOfExamples.push({title: '- ЗАКАЗАТЬ ОТЧЕТ ПО ПРАКТИКЕ ', link: './examples/order-work-5/'})
+    - listOfExamples.push({title: '- ЗАКАЗАТЬ ОТВЕТЫ НА БИЛЕТЫ ', link: './examples/order-work-6/'})
+    - listOfExamples.push({title: '- ЗАКАЗАТЬ ЭССЕ ', link: './examples/order-work-7/'})
+    - listOfExamples.push({title: '- ЗАКАЗАТЬ БИЗНЕС-ПЛАН ', link: './examples/order-work-8/'})
 
     - listOfExamples.push({title: 'цены и акции I', link: './examples/price-stock/'})
     - listOfExamples.push({title: 'цены и акции II', link: './examples/price-stock-2/'})
-    // - listOfExamples.push({title: 'цены и акции III', link: './examples/price-stock-3/'})
-
-
 
     - listOfExamples.push({title: 'партнерам', link: './examples/partners/'})
     - listOfExamples.push({title: 'партнерская програма', link: './examples/affiliate-programm/'})
@@ -39,9 +44,10 @@ html(lang="ru")
 
 
 
-    ul.listOfExamples
+    ol.listOfExamples
       each item in listOfExamples
         li.listOfExamples__item
           a.listOfExamples__link(href=item.link)!= item.title
 
     footer.footer
+

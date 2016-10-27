@@ -44,7 +44,8 @@
       items: 3,
       dots: false,
       center: false,
-      mouseDrag: false
+      mouseDrag: false,
+      navText: ['&#x27;next&#x27;','&#x27;prev&#x27;']
     };
     $('#reviewCarusel').owlCarousel(reviewCarusel);
 

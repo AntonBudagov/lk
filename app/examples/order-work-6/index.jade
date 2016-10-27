@@ -1,0 +1,194 @@
+extends ../../layouts/index.jade
+
+block head-title
+    | - ЗАКАЗАТЬ ОТВЕТЫ НА БИЛЕТЫ
+
+block styles
+    //- link(href="style.css", rel="stylesheet")
+
+block scripts
+    script(src='main.js')
+
+block content
+  .container.order-work
+    .wrappContent
+      h1 ЗАКАЗАТЬ ОТВЕТЫ НА БИЛЕТЫ
+      .description
+        p Для студента заказать ответы на билеты — выгодное решение. Самостоятельный поиск информации отнимает много времени, что важно, когда до экзамена осталось несколько дней. На многие вопросы сложно найти ответ, в результате не остается времени на подготовку. Чтобы гарантированно получить на экзамене хорошую оценку, закажите ответы на билеты в нашей компании.
+      form.form.formOrderWork
+        +leterOrder
+        .title ОФОРМИТЬ ЗАКАЗ
+        +chepterForm
+        //- .formContent
+          .leftFormContent
+            .groupInput
+              label Тип работы
+                span.required *
+              .select
+                span.default-value ВЫБЕРИТЕ ТИП РАБОТЫ
+                ul
+                  li Ответы на билеты
+                  li Lorem Ipsum Ipsum
+                  li Lorem Ipsum Ipsum
+                  li Lorem Ipsum
+                  li Lorem Ipsum Ipsum Ipsum
+                  li Lorem Ipsum
+                  li Lorem Ipsum
+                  li Lorem Ipsum Ipsum
+                  li Lorem
+                  li Lorem Ipsum
+                  li Ipsum
+            .groupInput
+              label
+                | Предмет
+                span.required *
+              input(type="text" placeholder="предмет")
+            .groupInput
+              label
+                | Город
+                span.required *
+              input(type="text" placeholder="Введите город")
+            .groupInput
+              label
+                | Имя
+                span.required *
+              input(type="text" placeholder="Ваше имя")
+          .rightFormContent
+
+            .groupInput
+              .groupInputSubitem
+                label
+                  | Количество страниц
+                  span.required *
+                input.number(type="text" placeholder="60-80")
+              .groupInputSubitem
+                label
+                  | Размер шрифта
+                  span.required *
+                .select.number
+                  span.default-value 14px
+                  ul
+                    li 16px
+                    li 18px
+                    li 20px
+            .groupInput
+              label
+                | Тема
+                span.required *
+              input(type="text" placeholder="Ваше имя")
+            .groupInput
+              label
+                | email
+                span.required *
+              input(type="text" placeholder="email")
+            .groupInput
+              label
+                | Телефон
+                span.required *
+              input.phoneValidation(type="tel" placeholder="+7 *** *** ****")
+
+        input(type="submit" value="создать заказ").btn.sendBtn
+      .fourPlus
+        //- +fourPlus
+        a.fourPlus-item.sectionContent-item.active(href="#")
+          i.icon.icon-le-smart-price
+          h4 Уникальные работы, проверенные на антиплагиат
+        a.fourPlus-item.sectionContent-item(href="#")
+          i.icon.icon-le-garant
+          h4 Гарантии высокого качества
+        a.fourPlus-item.sectionContent-item(href="#")
+          i.icon.icon-le-human
+          h4 Бесплатные доработки и корректировки
+        a.fourPlus-item.sectionContent-item(href="#")
+          i.icon.icon-le-short-time
+          h4 Короткие сроки
+      .desc
+        p  Ответы на билеты на заказ готовят квалифицированные авторы. Большой опыт подготовки студентов к экзаменам обеспечивает успешное выполнение заказов любой сложности. Мы напишем ответы на билеты в короткие сроки.
+      .processWork
+        h2 ЭТАПЫ РАБОТ
+        +fourCircle
+        h2 СТОИМОСТЬ ОТВЕТОВ НА БИЛЕТЫ НА ЗАКАЗ
+        p За годы работы мы помогли тысячам студентов успешно справиться с заданиями. Исполнители являются преподавателями вузов, у многих есть степень кандидата или доктора наук. Выверенная работа с заказчиками позволяет придерживаться привлекательных расценок, гарантируя качество, и установить расценки на уровне 60 рублей за билет.
+        .decription
+          .leftDesc
+            ul
+              li Чем определяется цена ответов на билеты и срок их написания?
+              li ― Учебная дисциплина;
+              li ― Охват сведений по вопросу в академической литературе;
+              li ― Наличие собственных наработок;
+              li ― Ограничения по срокам;
+              li ― Дополнительные условия.
+
+          .rightDesc
+            .rightDesc-item
+              i.icon.icon-le-smart-price
+              .text
+                span СТОИМОСТЬ НАПИСАНИЯ РАБОТЫ ОТ
+                span.price от 60 ₷
+
+            .rightDesc-item
+              i.icon.icon-le-short-time
+              .text
+                span СРОК ВЫПОЛНЕНИЯ
+                span.price от 2 ДНЕЙ
+      .finalWork
+        .finalWorkHead
+          .step
+            span ЗАКЛЮЧАЕМ ДОГОВОР
+            span.arrowNext →
+          .step
+            span ВНОСИТЕ 50% ПРЕДОПЛАТУ
+            span.arrowNext →
+          .step
+            span ПОГАШАЕТЕ ОСТАТОК ПО ГОТОВНОСТИ РАБОТЫ
+
+        .description
+          div
+            h4 КТО БУДЕТ ПИСАТЬ?
+            p Мы сотрудничаем со многими авторами, являющимися преподавателями крупных вузов России. Гарантируем, что исполнитель не окажется знакомым преподавателем, поэтому со сдачей экзамена не возникнет проблем.
+          div
+            h4 КАК ПОЛУЧИТЬ МАТЕРИАЛ?
+            p Готовые ответы на билеты отправляются на электронную почту заказчика. Предлагается забрать работу в распечатанном виде в офисе или заказать оперативную курьерскую доставку.
+          div
+            h4 КАКИЕ ГАРАНТИИ ПРЕДОСТАВЛЯЕМ?
+            p Заключаем с клиентами официальный договор, в котором четко прописываются требования заказчика. Если не устроит результат, мы вернем деньги. Доработки проводятся бесплатно, правки займут минимум времени.
+          div
+            h4 ЕСЛИ ХОТИТЕ СДЕЛАТЬ ЗАКАЗ?
+            p Чтобы купить ответы на экзаменационные билеты, заполните форму на сайте, отправьте письмо на электронный адрес или позвоните.
+
+      .fivePlus
+        .list
+          h2 5 ПРИЧИН ЗАКАЗАТЬ ОТВЕТЫ НА БИЛЕТЫ У НАС
+          p
+            span="1. Сжатые сроки выполнения заказа. "
+            | На подготовку полного комплекта экзаменационных билетов уходит от 2 дней. Сделав заказ, скоро подготовитесь к экзамену.
+          p
+            span="2. Гарантия качества. "
+            | Доверив подготовку ответов на билеты профессионалам, получите отличный результат.
+          p
+            span="3. Выгодное сотрудничество. "
+            | Менеджер подберет исполнителя по выбранному направлению. Нами учитываются персональные требования.
+          p
+            span="4. Надежность. "
+            | Гарантируем соблюдение условий, прописанных в договоре.
+          p
+            span="5. Отличные цены. "
+            | Предлагаем выгодные тарифы для студентов любых направлений. Стоимость подготовки ответов на билеты начинается от 60 рублей.
+      .mapContent
+        .wrappImg
+          img(src="../../images/elements/world-map.png", alt="")
+        .freeCall
+          h4 БЕСПЛАТНЫЙ ЗВОНОК ПО РОССИИ
+          .phone
+            i.icon.icon-mobile-black
+            span 8 (812) 987 12 07
+          a.btn.blackBtn(href="") ЗАКАЗАТЬ РАБОТУ
+        .infoWork
+          h4 ГРАФИК РАБОТЫ ОФИСА
+          p Пн-Вс:09:00-24:00
+          p Мы работаем по всей России!
+
+
+
+
+

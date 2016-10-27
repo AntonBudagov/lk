@@ -207,12 +207,34 @@ input:-ms-input-placeholder
 [type="checkbox"]:checked + label:after
   border: 1px solid #bcb8b2
 
+// hover
+.groupRadio, .groupCheckbox
+  label:hover:before
+    content: ''
+    background-color: #bcb8b2
+    z-index: 0
+    transform: scale(.5)
+    position: absolute
+    left: 0
+    top: 0
+    margin: 4px
+    width: 18px
+    height: 18px
+    z-index: 0
+    transition: .28s ease
+  label:hover:after
+    border: 1px solid #dedad6
+    transform: scale(.5)
+
+
+// hover end
+
 
 [type="radio"]:checked + label:after,
 [type="radio"]:checked + label:after,
 [type="checkbox"]:checked + label:after,
 [type="checkbox"]:checked + label:after
-  background-color: #bcb8b2
+  background-color: #000
   z-index: 0
 
 
@@ -222,6 +244,7 @@ input:-ms-input-placeholder
 
 .container
   padding-bottom: 25px
+  padding-top: 25px
 
 .groupCheckbox
   span
@@ -258,7 +281,7 @@ input:-ms-input-placeholder
 
 // Content Sidbar
 .content, .rightSibar
-    padding-top: 30px
+  // padding-top: 30px
 .content
   width: 70%
   width: 651px
@@ -291,8 +314,8 @@ input:-ms-input-placeholder
     margin-right: 20px
     text-decoration: none
     &:first-child
-      width: 109px
-      margin-right: 115px
+      width: 200px
+      margin-right: 24px
     &:nth-child(2)
       width: 200px
       margin-right: 97px
@@ -399,6 +422,8 @@ input:-ms-input-placeholder
     top: -3px
     z-index: 2
     +sprite($back-section4)
+    background-image: url(../images/icons/sprite.png)
+
 
   .orderItem
     display: inline-block
@@ -419,6 +444,8 @@ input:-ms-input-placeholder
     h4
       font-size: 15px
       margin-bottom: 15px
+    .icon-cap-blue
+      top: -40px
     p
       font-size: 12px
       font-weight: 300
@@ -472,3 +499,5 @@ svg
 @import _rightSibar
 
 @import _modal
+
+@import _orderWork

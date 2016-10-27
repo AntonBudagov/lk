@@ -16,7 +16,10 @@
           <div class="phoneContainer">
             <div class="tel">8 (812) 987 12 07</div>
           </div>
-          <div class="feedbackContainer"><a href="#" class="link">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a><a href="#" class="link">ЗАКАЗАТЬ РАБОТУ</a></div>
+          <div class="feedbackContainer">
+            <div class="linkGroupIcon"><i class="icon icon-phone-black-small"></i><a href="#modal2" class="link modal-trigger">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a></div>
+            <div class="linkGroupIcon"><i class="icon icon-pen"></i><a href="#modal2" class="link modal-trigger">ЗАКАЗАТЬ РАБОТУ</a></div>
+          </div>
         </div>
         <ul class="menu">
           <li><a href="../../examples/about/">О КОМПАНИИ</a></li>
@@ -29,10 +32,11 @@
       </div>
     </div>
     <div class="container page-about">
+      <div class="questionBtn"><span>ЗАДАТЬ ВОПРОС</span><i class="icon icon-btn-mail"></i></div>
       <div class="wrappContentSidbar">
         <div class="content">
           <h1>О КОМПАНИИ</h1>
-          <p>Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании Здесь будет текст о компании</p>
+          <p>Предлагаем профессиональные услуги по написанию студенческих работ по всем учебным дисциплинам. Мы много лет работаем со студентами различных вузов и обладаем большим опытом написания курсовых, дипломных, лабораторных работ, докладов, отчетов по практике и других видов исследований. В штат компании входят сотрудники с колоссальным опытом. Они являются преподавателями вузов, у многих есть кандидатская или докторская научная степень. Исполнители проходят ежегодную аттестацию, что гарантирует профессиональный подход. Также у нас работают компетентные менеджеры, сопровождающие клиента от момента заказа до сдачи. Заказывая студенческие работы в “Лекурс” вы получите:</p>
           <div id="sliderAbotu" class="owl-carousel"><img src="../../images/about/slide1.jpg" alt=""><img src="../../images/about/slide1.jpg" alt=""><img src="../../images/about/slide1.jpg" alt=""><img src="../../images/about/slide1.jpg" alt=""></div>
         </div>
         <div class="rightSibar">
@@ -63,7 +67,7 @@
             <div class="infoContact-item"><i class="icon icon-earth"></i></div>
             <div class="infoContact-item">
               <div class="phone"><i class="icon icon-mobile-black"></i>
-                <div class="text"><span>БЕСПЛАТНЫЙ ЗВОНОК</span><span>8 800 000 00 00</span></div>
+                <div class="text"><span>БЕСПЛАТНЫЙ ЗВОНОК</span><span>8 (812) 987 12 07</span></div>
               </div>
             </div>
             <div class="infoContact-item">
@@ -134,8 +138,40 @@
         </div>
       </div>
     </div>
+    <form id="modal2" class="modalForm modal feedBackForm">
+      <div class="groupInput">
+        <label>Телефон<span class="required"> *</span></label>
+        <input type="tel" placeholder="+7 *** *** ****" class="phoneValidation">
+      </div>
+      <div class="groupInput">
+        <label>Имя<span class="required"> *</span></label>
+        <input type="text" placeholder="Имя">
+      </div>
+      <div class="groupDay">
+        <div class="btn active">Cегодня</div>
+        <div class="btn">Завтра</div>
+      </div>
+      <div class="select"><span class="default-value">ВЫБЕРИТЕ</span>
+        <ul>
+          <li>в любое время</li>
+          <li>10:00</li>
+          <li>11:00</li>
+          <li>12:00</li>
+          <li>13:00</li>
+          <li>14:00</li>
+          <li>15:00</li>
+          <li>16:00</li>
+          <li>17:00</li>
+          <li>18:00</li>
+          <li>19:00</li>
+        </ul>
+      </div>
+      <input type="submit" value="Отправить" class="blackSubmit">
+    </form>
     <script src="../../lib/jquery/dist/jquery.min.js"></script>
     <script src="../../lib/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
+    <script src="../../lib/materialize/js/velocity.min.js"></script>
+    <script src="../../lib/materialize/js/leanModal.js"></script>
     <script src="../../js/main.js"></script>
     <script src="../../lib/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="main.js"></script>
